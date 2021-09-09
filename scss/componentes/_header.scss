@@ -1,0 +1,41 @@
+/* header */
+
+@import '../base/listas-variables';
+@import '../base/mixins';
+@import '../base/extends';
+header{
+    position: relative;
+    z-index: 1000;
+    background-color: nth($color-bg, 2 );
+    .item{
+        transition: 0.5s all;
+    }
+    .item:hover{
+        transform: scale(1.2);
+    }
+}
+
+/* Mediaqerys */
+/*  */
+/* + de 751px */
+@media only screen and (min-width:751px) {
+    /* Logo y menu */
+    header{
+        position: sticky;
+        top: 0px;
+    }
+
+
+}
+@media only screen and (max-width:991px) {
+    /* Logo y menu */
+    
+    .lista-items{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+}
+/* Fin header */
+/*  */

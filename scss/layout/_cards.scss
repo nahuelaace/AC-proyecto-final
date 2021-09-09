@@ -1,0 +1,74 @@
+/* Modelo de recuadro */
+
+@import '../base/listas-variables';
+@import '../base/mixins';
+
+.contenedor-recuadro{
+    height: 450px;
+    
+    .recuadro {
+        
+        margin: 30px;
+        width: 300px;
+        height: 400px;
+        border-radius: 2%;
+        border: 1px solid nth($color-bg, 6);
+        box-shadow: 10px 10px 30px 0 rgb(0 0 0 / 15%), -10px 10px 30px 0 rgb(0 0 0 / 15%);
+        background-color: nth($color-bg, 1);
+        position: relative;
+        z-index: 200;
+        
+        .container-imagen{
+            @extend %flex-center;
+            width: 300px;
+            height: 300px;
+            border-bottom: 1px solid nth($color-bg, 6);
+        }
+        .imagen {
+            padding: 10px;
+            width: 80%;
+            height: 80%;
+        }
+        
+        /* Este es solo para las imagenes del catalogo principal */
+        .nombre-seccion{
+            padding: 15px 20px 25px 20px;
+        }
+
+        /* Esto es para las imagenes con descripciones */
+        .container-descripcion{
+            font-family: $texto ;
+            @extend %flex-center;
+            flex-direction: column;
+            
+        }
+        .texto1{
+            @include estilo-font-colores(20px,$titulo,nth($color-bg,1),nth($color-font,2));
+            padding: 20px 20px 10px 20px;
+            font-weight: bold;
+        }
+        .texto2{
+            @include estilo-font-colores(15px,$texto,nth($color-bg,1),nth($color-font, 3));
+            width: auto;
+            height: auto;
+            display: none;
+            padding: 10px 20px 20px 20px;
+        }
+
+        &:hover{
+            box-shadow: 10px 10px 30px 0 rgb(0 0 0 / 30%),  
+            -10px 10px 30px 0 rgb(0 0 0 / 30%);
+            height: auto;
+
+            .texto2{
+                display:block;
+            }
+            position: relative;
+            z-index: 300;
+        }
+
+
+    }
+}
+
+

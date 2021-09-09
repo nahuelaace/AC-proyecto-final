@@ -1,0 +1,257 @@
+/* caracteristicas globales */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: content-box;
+}
+* dl, * ol, * ul {
+  margin-bottom: 0;
+  padding-left: 0%;
+}
+* a {
+  text-decoration: none;
+}
+* h1, * h2, * h3, * h4, * h5, * h6, * p {
+  margin-bottom: 0%;
+}
+* a:hover {
+  color: white;
+}
+* .btn-outline-success {
+  color: white;
+  border-color: white;
+}
+* .bg-dark {
+  background-color: transparent;
+}
+
+/* Fonts importadas de google */
+/* header */
+/* listas - variables */
+/* caracteristicas de seccion*/
+/* centrado de contenido */
+.contenedor-recuadro .recuadro .container-descripcion, .contenedor-recuadro .recuadro .container-imagen, footer .contenido-seccion-redes, .container-card-producto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  position: relative;
+  z-index: 1000;
+  background-color: black;
+}
+header .item {
+  transition: 0.5s all;
+}
+header .item:hover {
+  transform: scale(1.2);
+}
+
+/* Mediaqerys */
+/*  */
+/* + de 751px */
+@media only screen and (min-width: 751px) {
+  /* Logo y menu */
+  header {
+    position: sticky;
+    top: 0px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  /* Logo y menu */
+  .lista-items {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+}
+/* Fin header */
+/*  */
+/* Contenido de pagina */
+/* listas - variables */
+/* caracteristicas de seccion*/
+.indumentaria {
+  font-size: 25px;
+  background-color: #3667db;
+  font-family: "Spartan", sans-serif;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.container-card-producto {
+  padding: 30px 150px;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+/*  */
+/* Contenido de pagina */
+/* listas - variables */
+/* caracteristicas de seccion*/
+.indumentaria {
+  font-size: 25px;
+  background-color: #3667db;
+  font-family: "Spartan", sans-serif;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.container-card-producto {
+  padding: 30px 150px;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+/*  */
+/* Pagina de soporte */
+/* listas - variables */
+/* caracteristicas de seccion*/
+.body-soporte {
+  font-size: 20px;
+  background-color: #dfe7fa;
+  font-family: "Spartan", sans-serif;
+  color: black;
+  padding: 30px 10%;
+  text-align: center;
+}
+.body-soporte .mapa {
+  width: 60%;
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.15), -10px 10px 30px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* Fin pagina soporte */
+/*  */
+/* Footer soporte */
+/* listas - variables */
+/* caracteristicas de seccion*/
+footer {
+  /* Redes sociales */
+  /* Fin footer soporte */
+  /*  */
+}
+footer .soporte-ayuda {
+  font-size: 20px;
+  background-color: black;
+  font-family: "Spartan", sans-serif;
+  color: white;
+  text-align: center;
+  padding: 3px;
+}
+footer .contenido-soporte-ayuda {
+  font-size: 15px;
+  background-color: #a0b7f1;
+  font-family: "Spartan", sans-serif;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+footer .contactanos-aqui-texto {
+  text-decoration: underline;
+  color: black;
+}
+footer .contactanos-aqui-texto:hover {
+  color: white;
+}
+footer .seccion-redes {
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer .redes {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  padding: 5px;
+  transition: all 2s;
+}
+footer .redes:hover {
+  transform: rotate(360deg);
+}
+
+/* Modelo de recuadro */
+/* listas - variables */
+/* caracteristicas de seccion*/
+.contenedor-recuadro {
+  height: 450px;
+}
+.contenedor-recuadro .recuadro {
+  margin: 30px;
+  width: 300px;
+  height: 400px;
+  border-radius: 2%;
+  border: 1px solid #c4c4c4;
+  box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.15), -10px 10px 30px 0 rgba(0, 0, 0, 0.15);
+  background-color: white;
+  position: relative;
+  z-index: 200;
+  /* Este es solo para las imagenes del catalogo principal */
+  /* Esto es para las imagenes con descripciones */
+}
+.contenedor-recuadro .recuadro .container-imagen {
+  width: 300px;
+  height: 300px;
+  border-bottom: 1px solid #c4c4c4;
+}
+.contenedor-recuadro .recuadro .imagen {
+  padding: 10px;
+  width: 80%;
+  height: 80%;
+}
+.contenedor-recuadro .recuadro .nombre-seccion {
+  padding: 15px 20px 25px 20px;
+}
+.contenedor-recuadro .recuadro .container-descripcion {
+  font-family: "Spartan", sans-serif;
+  flex-direction: column;
+}
+.contenedor-recuadro .recuadro .texto1 {
+  font-size: 20px;
+  background-color: white;
+  font-family: "Righteous", cursive;
+  color: black;
+  padding: 20px 20px 10px 20px;
+  font-weight: bold;
+}
+.contenedor-recuadro .recuadro .texto2 {
+  font-size: 15px;
+  background-color: white;
+  font-family: "Spartan", sans-serif;
+  color: #686868;
+  width: auto;
+  height: auto;
+  display: none;
+  padding: 10px 20px 20px 20px;
+}
+.contenedor-recuadro .recuadro:hover {
+  box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.3), -10px 10px 30px 0 rgba(0, 0, 0, 0.3);
+  height: auto;
+  position: relative;
+  z-index: 300;
+}
+.contenedor-recuadro .recuadro:hover .texto2 {
+  display: block;
+}
+
+/* listas - variables */
+/* centrado de contenido */
+.container-card-producto, footer .contenido-seccion-redes, .contenedor-recuadro .recuadro .container-imagen, .contenedor-recuadro .recuadro .container-descripcion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* caracteristicas de seccion*/
+
+/*# sourceMappingURL=style.css.map */

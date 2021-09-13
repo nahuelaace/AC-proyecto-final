@@ -275,6 +275,14 @@ footer .redes:hover {
   justify-content: center;
   align-items: center;
 }
+.container-cards .card .card-2 .reserva .boton-reserva {
+  padding: 1px 5px;
+  border: 1px solid #c7c7c7;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  color: #666666;
+  text-align: center;
+}
 .container-cards .card:hover .card-1 {
   z-index: 500;
   animation: fix-z-index-card-1 0.7s;

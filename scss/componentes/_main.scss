@@ -15,7 +15,7 @@
     padding: 30px 150px;
     @extend %flex-center;
     flex-wrap: wrap;
-    background-color:nth($color-bg, 1);
+    background-color:nth($color-bg, 2);
 
 }
 

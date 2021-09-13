@@ -26,7 +26,6 @@ footer {
         color: nth($color-bg, 1);
     }
     
-    /* Redes sociales */
     .contenido-seccion-redes {
         @extend %flex-center;
     
@@ -51,6 +50,4 @@ footer {
         transform: rotate(360deg);
     }
     
-    /* Fin footer soporte */
-    /*  */
 }

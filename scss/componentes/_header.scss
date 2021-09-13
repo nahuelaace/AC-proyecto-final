@@ -4,9 +4,16 @@
 @import '../base/mixins';
 @import '../base/extends';
 header{
+    display: flex;
+    justify-content: center;
     position: relative;
     z-index: 1000;
     background-color: nth($color-bg, 2 );
+    .navbar{
+        width: 1200px;
+        display: flex;
+        justify-content: center;
+    }
     .item{
         transition: 0.5s all;
     }

@@ -37,7 +37,7 @@
     <header>
 
         <!-- Menu principal / Navegable -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark centrado">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html">AC</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,42 +66,62 @@
     <section class="contenido-de-pagina">  
         
         <h2 class="indumentaria">Abrigos!</h2>
-        <div class="container-cards">
+
+        <!-- Contenedor de card de producto y formulario -->
+        <section class="container-cards">
+
+            
+
+           
+
+          
+
+            
+
+            
+
+            <!-- Card 1 y card 2 -->
             <div class="card">
-                    <!-- card 1 -->
+
+                <!-- Card 1 -->
                 <div class="recuadro-cards card-1">
     
-                    <!-- contenedor imagen -->
+                    <!-- Contenedor imagen -->
                     <div class="container-imagen">
                         <img class="imagen" src="imagenes/buzo.png" alt="abrigo de buzo">
                     </div>
-    
-                    <!-- contenedor descripcion -->
+                    <!-- Fin contentedor imagen -->
+
+                    <!-- Contenedor descripcion -->
                     <div class="container-precio">
     
-                        <!-- titulo -->
+                        <!-- Precio -->
                         <p class="precio"> <strong>$4000</strong></p>
-                        <!-- texto -->
-                        <div class="ver-mas">
-                            <p > <strong>En stock</strong></p>
-                        </div>
-                        
+
+                        <!-- Estado en stock -->
+                        <p class="ver-mas"><strong>En stock</strong></p>    
     
                     </div>
-                    
+                    <!-- Fin contenedor descripcion -->
+
                 </div>
-    
-                <!-- card 2 -->
+                <!-- Fin card 1 -->
+
+                <!-- Card 2 -->
                 <div class="recuadro-cards card-2">
     
-                    <!-- contenedor imagen -->
+                    <!-- contenedor descripcion y formulario -->
                     <div class="container-imagen descripcion">
-                        <p>
-                            Remera roja Taverniti
-                        </p>
+                        
+                        <!-- Descripcion -->
+                        <p>Remera roja Taverniti</p>
+                        <!-- Fin decripcion -->
+
+                        <!-- Formulario -->
                         <form method="POST" action="enviar2.php">
+                            
+                            <!-- Seleccion de talle -->
                             <label class="talle" for="talle">Talle</label>
-    
                             <section class="opciones">
                                 <div><input type="radio" name="talle" value="xs" id="talle"> XS</div>
                                 <div><input type="radio" name="talle" value="s" id="talle"> S</div>
@@ -110,15 +130,20 @@
                                 <div><input type="radio" name="talle" value="xl" id="talle"> XL</div>
                                 <div><input type="radio" name="talle" value="xxl" id="talle"> XXL</div>
                             </section>
-                            
+                            <!-- Fin seleccion de talle -->
+
+                            <!-- Datos del cliente -->
                             <section class='datos-de-cliente'>
                                 <label for="nombre">Nombre</label> 
                                 <input type="text" name="nombre" id="nombre" placeholder="Nombre"> 
                                 <label for="email-cliente">Email</label>
                                 <input type="email" name="email-cliente" id="email-cliente" placeholder="Email">
                             </section>
-                            
+                            <!-- Fin datos del cliente -->
+
                         </form>
+                        <!-- Fin formulario -->
+
                     </div>
     
                     <!-- contenedor descripcion -->
@@ -130,63 +155,739 @@
                     </div>
                     
                 </div>
+                <!-- Fin card 2 -->
     
             </div>
-        </div>
+            <!-- Fin card 1 y card 2 -->
+
+            <!-- Card 1 y card 2 -->
+            <div class="card">
+
+                <!-- Card 1 -->
+                <div class="recuadro-cards card-1">
+    
+                    <!-- Contenedor imagen -->
+                    <div class="container-imagen">
+                        <img class="imagen" src="imagenes/buzo.png" alt="abrigo de buzo">
+                    </div>
+                    <!-- Fin contentedor imagen -->
+
+                    <!-- Contenedor descripcion -->
+                    <div class="container-precio">
+    
+                        <!-- Precio -->
+                        <p class="precio"> <strong>$4000</strong></p>
+
+                        <!-- Estado en stock -->
+                        <p class="ver-mas"><strong>En stock</strong></p>    
+    
+                    </div>
+                    <!-- Fin contenedor descripcion -->
+
+                </div>
+                <!-- Fin card 1 -->
+
+                <!-- Card 2 -->
+                <div class="recuadro-cards card-2">
+    
+                    <!-- contenedor descripcion y formulario -->
+                    <div class="container-imagen descripcion">
+                        
+                        <!-- Descripcion -->
+                        <p>Remera roja Taverniti</p>
+                        <!-- Fin decripcion -->
+
+                        <!-- Formulario -->
+                        <form method="POST" action="enviar2.php">
+                            
+                            <!-- Seleccion de talle -->
+                            <label class="talle" for="talle">Talle</label>
+                            <section class="opciones">
+                                <div><input type="radio" name="talle" value="xs" id="talle"> XS</div>
+                                <div><input type="radio" name="talle" value="s" id="talle"> S</div>
+                                <div><input type="radio" name="talle" value="m" id="talle"> M</div>
+                                <div><input type="radio" name="talle" value="l" id="talle"> L </div>
+                                <div><input type="radio" name="talle" value="xl" id="talle"> XL</div>
+                                <div><input type="radio" name="talle" value="xxl" id="talle"> XXL</div>
+                            </section>
+                            <!-- Fin seleccion de talle -->
+
+                            <!-- Datos del cliente -->
+                            <section class='datos-de-cliente'>
+                                <label for="nombre">Nombre</label> 
+                                <input type="text" name="nombre" id="nombre" placeholder="Nombre"> 
+                                <label for="email-cliente">Email</label>
+                                <input type="email" name="email-cliente" id="email-cliente" placeholder="Email">
+                            </section>
+                            <!-- Fin datos del cliente -->
+
+                        </form>
+                        <!-- Fin formulario -->
+
+                    </div>
+    
+                    <!-- contenedor descripcion -->
+                    <div class="reserva">
+    
+                        <!-- titulo -->
+                        <p> <strong>RESERVAR</strong></p>
+                        
+                    </div>
+                    
+                </div>
+                <!-- Fin card 2 -->
+    
+            </div>
+            <!-- Fin card 1 y card 2 -->
+
+            <!-- Card 1 y card 2 -->
+            <div class="card">
+
+                <!-- Card 1 -->
+                <div class="recuadro-cards card-1">
+    
+                    <!-- Contenedor imagen -->
+                    <div class="container-imagen">
+                        <img class="imagen" src="imagenes/buzo.png" alt="abrigo de buzo">
+                    </div>
+                    <!-- Fin contentedor imagen -->
+
+                    <!-- Contenedor descripcion -->
+                    <div class="container-precio">
+    
+                        <!-- Precio -->
+                        <p class="precio"> <strong>$4000</strong></p>
+
+                        <!-- Estado en stock -->
+                        <p class="ver-mas"><strong>En stock</strong></p>    
+    
+                    </div>
+                    <!-- Fin contenedor descripcion -->
+
+                </div>
+                <!-- Fin card 1 -->
+
+                <!-- Card 2 -->
+                <div class="recuadro-cards card-2">
+    
+                    <!-- contenedor descripcion y formulario -->
+                    <div class="container-imagen descripcion">
+                        
+                        <!-- Descripcion -->
+                        <p>Remera roja Taverniti</p>
+                        <!-- Fin decripcion -->
+
+                        <!-- Formulario -->
+                        <form method="POST" action="enviar2.php">
+                            
+                            <!-- Seleccion de talle -->
+                            <label class="talle" for="talle">Talle</label>
+                            <section class="opciones">
+                                <div><input type="radio" name="talle" value="xs" id="talle"> XS</div>
+                                <div><input type="radio" name="talle" value="s" id="talle"> S</div>
+                                <div><input type="radio" name="talle" value="m" id="talle"> M</div>
+                                <div><input type="radio" name="talle" value="l" id="talle"> L </div>
+                                <div><input type="radio" name="talle" value="xl" id="talle"> XL</div>
+                                <div><input type="radio" name="talle" value="xxl" id="talle"> XXL</div>
+                            </section>
+                            <!-- Fin seleccion de talle -->
+
+                            <!-- Datos del cliente -->
+                            <section class='datos-de-cliente'>
+                                <label for="nombre">Nombre</label> 
+                                <input type="text" name="nombre" id="nombre" placeholder="Nombre"> 
+                                <label for="email-cliente">Email</label>
+                                <input type="email" name="email-cliente" id="email-cliente" placeholder="Email">
+                            </section>
+                            <!-- Fin datos del cliente -->
+
+                        </form>
+                        <!-- Fin formulario -->
+
+                    </div>
+    
+                    <!-- contenedor descripcion -->
+                    <div class="reserva">
+    
+                        <!-- titulo -->
+                        <p> <strong>RESERVAR</strong></p>
+                        
+                    </div>
+                    
+                </div>
+                <!-- Fin card 2 -->
+    
+            </div>
+            <!-- Fin card 1 y card 2 -->
+
+            <!-- Card 1 y card 2 -->
+            <div class="card">
+
+                <!-- Card 1 -->
+                <div class="recuadro-cards card-1">
+    
+                    <!-- Contenedor imagen -->
+                    <div class="container-imagen">
+                        <img class="imagen" src="imagenes/buzo.png" alt="abrigo de buzo">
+                    </div>
+                    <!-- Fin contentedor imagen -->
+
+                    <!-- Contenedor descripcion -->
+                    <div class="container-precio">
+    
+                        <!-- Precio -->
+                        <p class="precio"> <strong>$4000</strong></p>
+
+                        <!-- Estado en stock -->
+                        <p class="ver-mas"><strong>En stock</strong></p>    
+    
+                    </div>
+                    <!-- Fin contenedor descripcion -->
+
+                </div>
+                <!-- Fin card 1 -->
+
+                <!-- Card 2 -->
+                <div class="recuadro-cards card-2">
+    
+                    <!-- contenedor descripcion y formulario -->
+                    <div class="container-imagen descripcion">
+                        
+                        <!-- Descripcion -->
+                        <p>Remera roja Taverniti</p>
+                        <!-- Fin decripcion -->
+
+                        <!-- Formulario -->
+                        <form method="POST" action="enviar2.php">
+                            
+                            <!-- Seleccion de talle -->
+                            <label class="talle" for="talle">Talle</label>
+                            <section class="opciones">
+                                <div><input type="radio" name="talle" value="xs" id="talle"> XS</div>
+                                <div><input type="radio" name="talle" value="s" id="talle"> S</div>
+                                <div><input type="radio" name="talle" value="m" id="talle"> M</div>
+                                <div><input type="radio" name="talle" value="l" id="talle"> L </div>
+                                <div><input type="radio" name="talle" value="xl" id="talle"> XL</div>
+                                <div><input type="radio" name="talle" value="xxl" id="talle"> XXL</div>
+                            </section>
+                            <!-- Fin seleccion de talle -->
+
+                            <!-- Datos del cliente -->
+                            <section class='datos-de-cliente'>
+                                <label for="nombre">Nombre</label> 
+                                <input type="text" name="nombre" id="nombre" placeholder="Nombre"> 
+                                <label for="email-cliente">Email</label>
+                                <input type="email" name="email-cliente" id="email-cliente" placeholder="Email">
+                            </section>
+                            <!-- Fin datos del cliente -->
+
+                        </form>
+                        <!-- Fin formulario -->
+
+                    </div>
+    
+                    <!-- contenedor descripcion -->
+                    <div class="reserva">
+    
+                        <!-- titulo -->
+                        <p> <strong>RESERVAR</strong></p>
+                        
+                    </div>
+                    
+                </div>
+                <!-- Fin card 2 -->
+    
+            </div>
+            <!-- Fin card 1 y card 2 -->
+
+            <!-- Card 1 y card 2 -->
+            <div class="card">
+
+                <!-- Card 1 -->
+                <div class="recuadro-cards card-1">
+    
+                    <!-- Contenedor imagen -->
+                    <div class="container-imagen">
+                        <img class="imagen" src="imagenes/buzo.png" alt="abrigo de buzo">
+                    </div>
+                    <!-- Fin contentedor imagen -->
+
+                    <!-- Contenedor descripcion -->
+                    <div class="container-precio">
+    
+                        <!-- Precio -->
+                        <p class="precio"> <strong>$4000</strong></p>
+
+                        <!-- Estado en stock -->
+                        <p class="ver-mas"><strong>En stock</strong></p>    
+    
+                    </div>
+                    <!-- Fin contenedor descripcion -->
+
+                </div>
+                <!-- Fin card 1 -->
+
+                <!-- Card 2 -->
+                <div class="recuadro-cards card-2">
+    
+                    <!-- contenedor descripcion y formulario -->
+                    <div class="container-imagen descripcion">
+                        
+                        <!-- Descripcion -->
+                        <p>Remera roja Taverniti</p>
+                        <!-- Fin decripcion -->
+
+                        <!-- Formulario -->
+                        <form method="POST" action="enviar2.php">
+                            
+                            <!-- Seleccion de talle -->
+                            <label class="talle" for="talle">Talle</label>
+                            <section class="opciones">
+                                <div><input type="radio" name="talle" value="xs" id="talle"> XS</div>
+                                <div><input type="radio" name="talle" value="s" id="talle"> S</div>
+                                <div><input type="radio" name="talle" value="m" id="talle"> M</div>
+                                <div><input type="radio" name="talle" value="l" id="talle"> L </div>
+                                <div><input type="radio" name="talle" value="xl" id="talle"> XL</div>
+                                <div><input type="radio" name="talle" value="xxl" id="talle"> XXL</div>
+                            </section>
+                            <!-- Fin seleccion de talle -->
+
+                            <!-- Datos del cliente -->
+                            <section class='datos-de-cliente'>
+                                <label for="nombre">Nombre</label> 
+                                <input type="text" name="nombre" id="nombre" placeholder="Nombre"> 
+                                <label for="email-cliente">Email</label>
+                                <input type="email" name="email-cliente" id="email-cliente" placeholder="Email">
+                            </section>
+                            <!-- Fin datos del cliente -->
+
+                        </form>
+                        <!-- Fin formulario -->
+
+                    </div>
+    
+                    <!-- contenedor descripcion -->
+                    <div class="reserva">
+    
+                        <!-- titulo -->
+                        <p> <strong>RESERVAR</strong></p>
+                        
+                    </div>
+                    
+                </div>
+                <!-- Fin card 2 -->
+    
+            </div>
+            <!-- Fin card 1 y card 2 -->
+
+            <!-- Card 1 y card 2 -->
+            <div class="card">
+
+                <!-- Card 1 -->
+                <div class="recuadro-cards card-1">
+    
+                    <!-- Contenedor imagen -->
+                    <div class="container-imagen">
+                        <img class="imagen" src="imagenes/buzo.png" alt="abrigo de buzo">
+                    </div>
+                    <!-- Fin contentedor imagen -->
+
+                    <!-- Contenedor descripcion -->
+                    <div class="container-precio">
+    
+                        <!-- Precio -->
+                        <p class="precio"> <strong>$4000</strong></p>
+
+                        <!-- Estado en stock -->
+                        <p class="ver-mas"><strong>En stock</strong></p>    
+    
+                    </div>
+                    <!-- Fin contenedor descripcion -->
+
+                </div>
+                <!-- Fin card 1 -->
+
+                <!-- Card 2 -->
+                <div class="recuadro-cards card-2">
+    
+                    <!-- contenedor descripcion y formulario -->
+                    <div class="container-imagen descripcion">
+                        
+                        <!-- Descripcion -->
+                        <p>Remera roja Taverniti</p>
+                        <!-- Fin decripcion -->
+
+                        <!-- Formulario -->
+                        <form method="POST" action="enviar2.php">
+                            
+                            <!-- Seleccion de talle -->
+                            <label class="talle" for="talle">Talle</label>
+                            <section class="opciones">
+                                <div><input type="radio" name="talle" value="xs" id="talle"> XS</div>
+                                <div><input type="radio" name="talle" value="s" id="talle"> S</div>
+                                <div><input type="radio" name="talle" value="m" id="talle"> M</div>
+                                <div><input type="radio" name="talle" value="l" id="talle"> L </div>
+                                <div><input type="radio" name="talle" value="xl" id="talle"> XL</div>
+                                <div><input type="radio" name="talle" value="xxl" id="talle"> XXL</div>
+                            </section>
+                            <!-- Fin seleccion de talle -->
+
+                            <!-- Datos del cliente -->
+                            <section class='datos-de-cliente'>
+                                <label for="nombre">Nombre</label> 
+                                <input type="text" name="nombre" id="nombre" placeholder="Nombre"> 
+                                <label for="email-cliente">Email</label>
+                                <input type="email" name="email-cliente" id="email-cliente" placeholder="Email">
+                            </section>
+                            <!-- Fin datos del cliente -->
+
+                        </form>
+                        <!-- Fin formulario -->
+
+                    </div>
+    
+                    <!-- contenedor descripcion -->
+                    <div class="reserva">
+    
+                        <!-- titulo -->
+                        <p> <strong>RESERVAR</strong></p>
+                        
+                    </div>
+                    
+                </div>
+                <!-- Fin card 2 -->
+    
+            </div>
+            <!-- Fin card 1 y card 2 -->
+
+            <!-- Card 1 y card 2 -->
+            <div class="card">
+
+                <!-- Card 1 -->
+                <div class="recuadro-cards card-1">
+    
+                    <!-- Contenedor imagen -->
+                    <div class="container-imagen">
+                        <img class="imagen" src="imagenes/buzo.png" alt="abrigo de buzo">
+                    </div>
+                    <!-- Fin contentedor imagen -->
+
+                    <!-- Contenedor descripcion -->
+                    <div class="container-precio">
+    
+                        <!-- Precio -->
+                        <p class="precio"> <strong>$4000</strong></p>
+
+                        <!-- Estado en stock -->
+                        <p class="ver-mas"><strong>En stock</strong></p>    
+    
+                    </div>
+                    <!-- Fin contenedor descripcion -->
+
+                </div>
+                <!-- Fin card 1 -->
+
+                <!-- Card 2 -->
+                <div class="recuadro-cards card-2">
+    
+                    <!-- contenedor descripcion y formulario -->
+                    <div class="container-imagen descripcion">
+                        
+                        <!-- Descripcion -->
+                        <p>Remera roja Taverniti</p>
+                        <!-- Fin decripcion -->
+
+                        <!-- Formulario -->
+                        <form method="POST" action="enviar2.php">
+                            
+                            <!-- Seleccion de talle -->
+                            <label class="talle" for="talle">Talle</label>
+                            <section class="opciones">
+                                <div><input type="radio" name="talle" value="xs" id="talle"> XS</div>
+                                <div><input type="radio" name="talle" value="s" id="talle"> S</div>
+                                <div><input type="radio" name="talle" value="m" id="talle"> M</div>
+                                <div><input type="radio" name="talle" value="l" id="talle"> L </div>
+                                <div><input type="radio" name="talle" value="xl" id="talle"> XL</div>
+                                <div><input type="radio" name="talle" value="xxl" id="talle"> XXL</div>
+                            </section>
+                            <!-- Fin seleccion de talle -->
+
+                            <!-- Datos del cliente -->
+                            <section class='datos-de-cliente'>
+                                <label for="nombre">Nombre</label> 
+                                <input type="text" name="nombre" id="nombre" placeholder="Nombre"> 
+                                <label for="email-cliente">Email</label>
+                                <input type="email" name="email-cliente" id="email-cliente" placeholder="Email">
+                            </section>
+                            <!-- Fin datos del cliente -->
+
+                        </form>
+                        <!-- Fin formulario -->
+
+                    </div>
+    
+                    <!-- contenedor descripcion -->
+                    <div class="reserva">
+    
+                        <!-- titulo -->
+                        <p> <strong>RESERVAR</strong></p>
+                        
+                    </div>
+                    
+                </div>
+                <!-- Fin card 2 -->
+    
+            </div>
+            <!-- Fin card 1 y card 2 -->
+
+            <!-- Card 1 y card 2 -->
+            <div class="card">
+
+                <!-- Card 1 -->
+                <div class="recuadro-cards card-1">
+    
+                    <!-- Contenedor imagen -->
+                    <div class="container-imagen">
+                        <img class="imagen" src="imagenes/buzo.png" alt="abrigo de buzo">
+                    </div>
+                    <!-- Fin contentedor imagen -->
+
+                    <!-- Contenedor descripcion -->
+                    <div class="container-precio">
+    
+                        <!-- Precio -->
+                        <p class="precio"> <strong>$4000</strong></p>
+
+                        <!-- Estado en stock -->
+                        <p class="ver-mas"><strong>En stock</strong></p>    
+    
+                    </div>
+                    <!-- Fin contenedor descripcion -->
+
+                </div>
+                <!-- Fin card 1 -->
+
+                <!-- Card 2 -->
+                <div class="recuadro-cards card-2">
+    
+                    <!-- contenedor descripcion y formulario -->
+                    <div class="container-imagen descripcion">
+                        
+                        <!-- Descripcion -->
+                        <p>Remera roja Taverniti</p>
+                        <!-- Fin decripcion -->
+
+                        <!-- Formulario -->
+                        <form method="POST" action="enviar2.php">
+                            
+                            <!-- Seleccion de talle -->
+                            <label class="talle" for="talle">Talle</label>
+                            <section class="opciones">
+                                <div><input type="radio" name="talle" value="xs" id="talle"> XS</div>
+                                <div><input type="radio" name="talle" value="s" id="talle"> S</div>
+                                <div><input type="radio" name="talle" value="m" id="talle"> M</div>
+                                <div><input type="radio" name="talle" value="l" id="talle"> L </div>
+                                <div><input type="radio" name="talle" value="xl" id="talle"> XL</div>
+                                <div><input type="radio" name="talle" value="xxl" id="talle"> XXL</div>
+                            </section>
+                            <!-- Fin seleccion de talle -->
+
+                            <!-- Datos del cliente -->
+                            <section class='datos-de-cliente'>
+                                <label for="nombre">Nombre</label> 
+                                <input type="text" name="nombre" id="nombre" placeholder="Nombre"> 
+                                <label for="email-cliente">Email</label>
+                                <input type="email" name="email-cliente" id="email-cliente" placeholder="Email">
+                            </section>
+                            <!-- Fin datos del cliente -->
+
+                        </form>
+                        <!-- Fin formulario -->
+
+                    </div>
+    
+                    <!-- contenedor descripcion -->
+                    <div class="reserva">
+    
+                        <!-- titulo -->
+                        <p> <strong>RESERVAR</strong></p>
+                        
+                    </div>
+                    
+                </div>
+                <!-- Fin card 2 -->
+    
+            </div>
+            <!-- Fin card 1 y card 2 -->
+
+            <!-- Card 1 y card 2 -->
+            <div class="card">
+
+                <!-- Card 1 -->
+                <div class="recuadro-cards card-1">
+    
+                    <!-- Contenedor imagen -->
+                    <div class="container-imagen">
+                        <img class="imagen" src="imagenes/buzo.png" alt="abrigo de buzo">
+                    </div>
+                    <!-- Fin contentedor imagen -->
+
+                    <!-- Contenedor descripcion -->
+                    <div class="container-precio">
+    
+                        <!-- Precio -->
+                        <p class="precio"> <strong>$4000</strong></p>
+
+                        <!-- Estado en stock -->
+                        <p class="ver-mas"><strong>En stock</strong></p>    
+    
+                    </div>
+                    <!-- Fin contenedor descripcion -->
+
+                </div>
+                <!-- Fin card 1 -->
+
+                <!-- Card 2 -->
+                <div class="recuadro-cards card-2">
+    
+                    <!-- contenedor descripcion y formulario -->
+                    <div class="container-imagen descripcion">
+                        
+                        <!-- Descripcion -->
+                        <p>Remera roja Taverniti</p>
+                        <!-- Fin decripcion -->
+
+                        <!-- Formulario -->
+                        <form method="POST" action="enviar2.php">
+                            
+                            <!-- Seleccion de talle -->
+                            <label class="talle" for="talle">Talle</label>
+                            <section class="opciones">
+                                <div><input type="radio" name="talle" value="xs" id="talle"> XS</div>
+                                <div><input type="radio" name="talle" value="s" id="talle"> S</div>
+                                <div><input type="radio" name="talle" value="m" id="talle"> M</div>
+                                <div><input type="radio" name="talle" value="l" id="talle"> L </div>
+                                <div><input type="radio" name="talle" value="xl" id="talle"> XL</div>
+                                <div><input type="radio" name="talle" value="xxl" id="talle"> XXL</div>
+                            </section>
+                            <!-- Fin seleccion de talle -->
+
+                            <!-- Datos del cliente -->
+                            <section class='datos-de-cliente'>
+                                <label for="nombre">Nombre</label> 
+                                <input type="text" name="nombre" id="nombre" placeholder="Nombre"> 
+                                <label for="email-cliente">Email</label>
+                                <input type="email" name="email-cliente" id="email-cliente" placeholder="Email">
+                            </section>
+                            <!-- Fin datos del cliente -->
+
+                        </form>
+                        <!-- Fin formulario -->
+
+                    </div>
+    
+                    <!-- contenedor descripcion -->
+                    <div class="reserva">
+    
+                        <!-- titulo -->
+                        <p> <strong>RESERVAR</strong></p>
+                        
+                    </div>
+                    
+                </div>
+                <!-- Fin card 2 -->
+    
+            </div>
+            <!-- Fin card 1 y card 2 -->
+
+            <!-- Card 1 y card 2 -->
+            <div class="card">
+
+                <!-- Card 1 -->
+                <div class="recuadro-cards card-1">
+    
+                    <!-- Contenedor imagen -->
+                    <div class="container-imagen">
+                        <img class="imagen" src="imagenes/buzo.png" alt="abrigo de buzo">
+                    </div>
+                    <!-- Fin contentedor imagen -->
+
+                    <!-- Contenedor descripcion -->
+                    <div class="container-precio">
+    
+                        <!-- Precio -->
+                        <p class="precio"> <strong>$4000</strong></p>
+
+                        <!-- Estado en stock -->
+                        <p class="ver-mas"><strong>En stock</strong></p>    
+    
+                    </div>
+                    <!-- Fin contenedor descripcion -->
+
+                </div>
+                <!-- Fin card 1 -->
+
+                <!-- Card 2 -->
+                <div class="recuadro-cards card-2">
+    
+                    <!-- contenedor descripcion y formulario -->
+                    <div class="container-imagen descripcion">
+                        
+                        <!-- Descripcion -->
+                        <p>Remera roja Taverniti</p>
+                        <!-- Fin decripcion -->
+
+                        <!-- Formulario -->
+                        <form method="POST" action="enviar2.php">
+                            
+                            <!-- Seleccion de talle -->
+                            <label class="talle" for="talle">Talle</label>
+                            <section class="opciones">
+                                <div><input type="radio" name="talle" value="xs" id="talle"> XS</div>
+                                <div><input type="radio" name="talle" value="s" id="talle"> S</div>
+                                <div><input type="radio" name="talle" value="m" id="talle"> M</div>
+                                <div><input type="radio" name="talle" value="l" id="talle"> L </div>
+                                <div><input type="radio" name="talle" value="xl" id="talle"> XL</div>
+                                <div><input type="radio" name="talle" value="xxl" id="talle"> XXL</div>
+                            </section>
+                            <!-- Fin seleccion de talle -->
+
+                            <!-- Datos del cliente -->
+                            <section class='datos-de-cliente'>
+                                <label for="nombre">Nombre</label> 
+                                <input type="text" name="nombre" id="nombre" placeholder="Nombre"> 
+                                <label for="email-cliente">Email</label>
+                                <input type="email" name="email-cliente" id="email-cliente" placeholder="Email">
+                            </section>
+                            <!-- Fin datos del cliente -->
+
+                        </form>
+                        <!-- Fin formulario -->
+
+                    </div>
+    
+                    <!-- contenedor descripcion -->
+                    <div class="reserva">
+    
+                        <!-- titulo -->
+                        <p> <strong>RESERVAR</strong></p>
+                        
+                    </div>
+                    
+                </div>
+                <!-- Fin card 2 -->
+    
+            </div>
+            <!-- Fin card 1 y card 2 -->
+
+        </section>
+        <!-- Fin Contenedor de card de producto y formulario -->
+        
 
     </section>
     <!-- Fin seccion catalogo -->
 
-
-    <li class="contenedor-recuadro">
-
-        <div class="recuadro-1">
-            <!-- contenedor de imagen de producto -->
-            <div class="container-imagen">
-                <img class="imagen" src="imagenes/buzo.png" alt="abrigo de buzo">
-            </div>
-
-            <!-- contenedor de descripcion -->
-            <div class="container-descripcion">
-
-                <!-- titulo -->
-                <p class="texto1">
-                    $4000
-                </p>
-
-                <!-- descripcion -->
-                <div class="texto2">
-                    <p>
-                        Buzo Taverniti, Negro
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="recuadro-2"></div>
-    </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Footer -->
     <footer>
 
         <!-- Seccion de soporte -->

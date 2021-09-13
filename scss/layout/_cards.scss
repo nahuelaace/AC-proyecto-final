@@ -6,9 +6,6 @@
 .container-cards{
     width: 1200px;
     margin: 0px auto;
-    display: grid;
-    display: -ms-grid;
-    display: -moz-grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 400px 400px ;
 

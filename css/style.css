@@ -194,7 +194,7 @@ footer .redes:hover {
   height: 350px;
   border-radius: 2%;
   border: 1px solid #c4c4c4;
-  box-shadow: 7px 7px 20px 0 rgba(0, 0, 0, 0.15), -7px 7px 20px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 7px 7px 20px 0 rgba(0, 0, 0, 0.1), -7px 7px 20px 0 rgba(0, 0, 0, 0.1);
   transition: all 0.7s;
   /* Esto es para las imagenes con descripciones */
 }
@@ -208,7 +208,7 @@ footer .redes:hover {
 }
 .container-cards .card .recuadro-cards .container-imagen .imagen {
   width: 224px;
-  height: 100%;
+  height: 300px;
 }
 .container-cards .card .recuadro-cards .container-precio {
   display: grid;

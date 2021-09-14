@@ -29,8 +29,6 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- PHP -->
-    
     
     <title> - AC - Tienda de ropa de alta calidad para todos </title>
 </head>
@@ -72,16 +70,6 @@
 
         <!-- Contenedor de card de producto y formulario -->
         <section class="container-cards">
-
-            
-
-           
-
-          
-
-            
-
-            
 
             <!-- Card 1 y card 2 -->
             <div class="card">
@@ -149,7 +137,11 @@
 
                     </div>
                     <div class="reserva">
-                        <a class="boton-reserva" href="abrigos.html"> <strong>RESERVAR</strong> </a>
+                        
+                        <a tabindex="0" class="btn btn-secondary" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
+                        <!-- <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Reservado!">
+                            RESERVAR
+                          </button> -->
                     </div>
  
                 </div>
@@ -941,5 +933,13 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+<script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {;
+    return new bootstrap.Popover(popoverTriggerEl);
+})
+</script>
+
 </body>
 </html>

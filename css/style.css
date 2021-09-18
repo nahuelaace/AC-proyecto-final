@@ -408,6 +408,8 @@ footer .justifi-content-start {
   border-bottom: 1px solid #c4c4c4;
 }
 .container-cards .card .recuadro-cards .container-imagen .imagen {
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
   width: 224px;
   height: 300px;
 }

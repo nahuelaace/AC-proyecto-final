@@ -11,6 +11,7 @@
     grid-template-rows: 400px 400px 400px;
 
     .card{
+        
         position: relative;
         display: flex;
         justify-content: center;
@@ -19,12 +20,12 @@
             
             width: 224px;
             height: 350px;
-            
             border-radius: 2%;
             box-shadow: 7px 7px 20px 0 rgb(0 0 0 / 10%),  
             -7px 7px 20px 0 rgb(0 0 0 / 10%);
             transition: all 0.7s;
             .container-imagen{
+
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -32,6 +33,9 @@
                 height: 300px;
                 border-bottom: 1px solid rgb(196, 196, 196);
                 .imagen {
+
+                    border-top-left-radius: 2%;
+                    border-top-right-radius: 2%;
                     width: 224px;
                     height: 300px;
                 }

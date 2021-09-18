@@ -7,7 +7,7 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 * dl, * ol, * ul {
   margin-bottom: 0;
@@ -22,6 +22,13 @@
 * a:hover {
   color: white;
 }
+* .container-fluid {
+  margin: 0%;
+  padding: 0%;
+}
+* .nav-link, * .navbar-brand {
+  padding: 0%;
+}
 * .btn-outline-success {
   color: white;
   border-color: white;
@@ -31,6 +38,7 @@
 }
 * .card {
   border: none;
+  background-color: transparent;
 }
 
 /* Fonts importadas de google */
@@ -48,19 +56,54 @@ header {
   display: flex;
   justify-content: center;
   position: relative;
-  z-index: 1000;
-  background-color: black;
+  height: auto;
+  z-index: 2000;
+}
+header .logo {
+  font-family: "Righteous", cursive;
 }
 header .navbar {
-  width: 1200px;
+  width: 100%;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 header .item {
+  color: #e2e2e2;
   transition: 0.5s all;
 }
 header .item:hover {
+  color: #dddddd;
   transform: scale(1.2);
+}
+header .container-fluid {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+header .nav-item {
+  margin-bottom: 5px;
+  height: 20px;
+  padding: 0% 30px;
+}
+header .contenedor-sepadador-items {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+header .contenedor-sepadador-items .contenedor-items {
+  display: flex;
+  align-items: center;
+}
+header .contenedor-sepadador-items .contenedor-items-1 {
+  justify-content: start;
+}
+header .contenedor-sepadador-items .contenedor-items-2 {
+  justify-content: center;
+}
+header .contenedor-sepadador-items .contenedor-items-3 {
+  justify-content: end;
 }
 
 /* Mediaqerys */
@@ -86,28 +129,176 @@ header .item:hover {
 /* Contenido de pagina */
 /* listas - variables */
 /* caracteristicas de seccion*/
-.indumentaria {
-  font-size: 25px;
-  background-color: #3667db;
+.nombre-seccion {
+  padding-top: 20px;
+  font-family: "Righteous", cursive;
+  display: flex;
+  justify-content: center;
+}
+
+.container-productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.container-productos .contenedor-categoria {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+  width: 300px;
+  height: 500px;
+}
+.container-productos .contenedor-categoria .contenedor-grid-categoria {
+  display: grid;
+  grid-template-rows: 100px 400px;
+  transition: all 0.7s;
+}
+.container-productos .contenedor-categoria .contenedor-grid-categoria .nombre-categoria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Antic Slab", serif;
+  font-size: 32px;
+  color: dimgray;
+  font-weight: bold;
+}
+.container-productos .contenedor-categoria .contenedor-grid-categoria .container-imagen {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: auto;
+  z-index: 1000;
+}
+.container-productos .contenedor-categoria .contenedor-grid-categoria .container-imagen .imagen {
+  width: 300px;
+  height: 400px;
+}
+.container-productos .contenedor-categoria .contenedor-grid-categoria:hover {
+  transform: scale(1.07);
+}
+
+.conocenos {
+  height: 600px;
+  background-color: #ecca80;
+}
+.conocenos .contenido-conocenos {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 500px;
+}
+.conocenos .contenido-conocenos .descripcion-empresa {
+  display: flex;
+  align-items: center;
+}
+.conocenos .contenido-conocenos .descripcion-empresa .padding-descripcion-conocenos {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  height: 150px;
+  background-color: #dddddd;
   font-family: "Spartan", sans-serif;
-  color: white;
-  text-align: center;
-  padding: 5px;
-  border-bottom: 1px solid #c4c4c4;
+}
+.conocenos .contenido-conocenos .contenedor-imagen-conocenos {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.conocenos .contenido-conocenos .contenedor-imagen-conocenos img {
+  width: 300px;
+  height: 400px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 4rem;
+  height: 4rem;
 }
 
 /*  */
 /* Contenido de pagina */
 /* listas - variables */
 /* caracteristicas de seccion*/
-.indumentaria {
-  font-size: 25px;
-  background-color: #3667db;
+.nombre-seccion {
+  padding-top: 20px;
+  font-family: "Righteous", cursive;
+  display: flex;
+  justify-content: center;
+}
+
+.container-productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.container-productos .contenedor-categoria {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+  width: 300px;
+  height: 500px;
+}
+.container-productos .contenedor-categoria .contenedor-grid-categoria {
+  display: grid;
+  grid-template-rows: 100px 400px;
+  transition: all 0.7s;
+}
+.container-productos .contenedor-categoria .contenedor-grid-categoria .nombre-categoria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Antic Slab", serif;
+  font-size: 32px;
+  color: dimgray;
+  font-weight: bold;
+}
+.container-productos .contenedor-categoria .contenedor-grid-categoria .container-imagen {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: auto;
+  z-index: 1000;
+}
+.container-productos .contenedor-categoria .contenedor-grid-categoria .container-imagen .imagen {
+  width: 300px;
+  height: 400px;
+}
+.container-productos .contenedor-categoria .contenedor-grid-categoria:hover {
+  transform: scale(1.07);
+}
+
+.conocenos {
+  height: 600px;
+  background-color: #ecca80;
+}
+.conocenos .contenido-conocenos {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 500px;
+}
+.conocenos .contenido-conocenos .descripcion-empresa {
+  display: flex;
+  align-items: center;
+}
+.conocenos .contenido-conocenos .descripcion-empresa .padding-descripcion-conocenos {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  height: 150px;
+  background-color: #dddddd;
   font-family: "Spartan", sans-serif;
-  color: white;
-  text-align: center;
-  padding: 5px;
-  border-bottom: 1px solid #c4c4c4;
+}
+.conocenos .contenido-conocenos .contenedor-imagen-conocenos {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.conocenos .contenido-conocenos .contenedor-imagen-conocenos img {
+  width: 300px;
+  height: 400px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 4rem;
+  height: 4rem;
 }
 
 /*  */
@@ -172,6 +363,18 @@ footer .redes {
 footer .redes:hover {
   transform: rotate(360deg);
 }
+footer .seccion-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+footer .seccion-links .row-nowrap {
+  flex-wrap: nowrap;
+}
+footer .justifi-content-start {
+  display: flex;
+  justify-content: start;
+}
 
 /* Modelo de recuadro */
 /* listas - variables */
@@ -182,7 +385,6 @@ footer .redes:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 400px 400px 400px;
-  background-image: url("../fondo.jpg");
 }
 .container-cards .card {
   position: relative;
@@ -194,7 +396,6 @@ footer .redes:hover {
   width: 224px;
   height: 350px;
   border-radius: 2%;
-  border: 1px solid #c4c4c4;
   box-shadow: 7px 7px 20px 0 rgba(0, 0, 0, 0.1), -7px 7px 20px 0 rgba(0, 0, 0, 0.1);
   transition: all 0.7s;
   /* Esto es para las imagenes con descripciones */

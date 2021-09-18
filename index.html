@@ -26,6 +26,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
+    <!-- MDBoostrap -->
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+    rel="stylesheet"
+    />
+    
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     
@@ -34,238 +51,365 @@
 <body>
 
     <!-- encabezado y menu -->
-    <header>
-
+    <header >
+        
         <!-- Menu principal / Navegable -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg bg-dark ">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">AC</a>
+              
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link item" href="#conocenos">Conocenos</a>
-                  </li>
 
-                </ul>
-              </div>
+                <div class="contenedor-sepadador-items container">
+
+                    <ul class="contenedor-items contenedor-items-1">
+
+                        <li class="nav-item">
+                            <a class="nav-link item contenedor-item" href="#productos">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active item" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link item" href="#conocenos">Conocenos</a>
+                        </li>
+                    </ul>
+
+
+                    <div class=" contenedor-items contenedor-items-2">
+                        <a class="navbar-brand item logo " href="index.html"><h1>AC</h1></a>
+                    </div>
+                   
+                    <ul class="contenedor-items contenedor-items-3">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link item" href="https://www.instagram.com/">Instagram</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link item" href="https://www.facebook.com/">Facebook</a>
+                        </li>
+                    </ul>
+
+                </div>
+              
             </div>
+            
         </nav>
+    
 
     </header>
     <!-- fin encabezado y menu -->
-    
+
+    <!-- Carrusel noticias -->
+    <section id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="imagenes/noticias-1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <img src="imagenes/noticias-2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <img src="imagenes/noticias-3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </section>
+    <!-- Fin carrusel noticias -->
 
     <!-- Seccion de indumentaria -->
-    <section class="contenido-de-pagina">  
-        <div class="sombra">
-            <h2 class="indumentaria">Indumentaria!</h2>
-        </div>
+    <section>
         
+        <section class="container" id="productos">  
 
-        <ul class="container-card-producto">
+            <section class="nombre-seccion">
+                <h2>Nuestros productos</h2>
+            </section>
+            <ul class="container-productos ">
 
-            <!-- recuadro de producto -->
-            <li class="contenedor-recuadro">
-                <a href="zapatillas.html">
-                    <div class="recuadro">
-                        <!-- contenedor de imagen de producto -->
-                        <div class="container-imagen">
-                            <img class="imagen" src="imagenes/zapatillas.png" alt="abrigo de buzo">
+                <!-- recuadro de producto -->
+                <li class="contenedor-categoria">
+
+                    <a href="zapatillas.html">
+                        <div class="contenedor-grid-categoria">
+                            <!-- contenedor de descripcion -->
+                            <div class="nombre-categoria">
+
+                                <!-- titulo -->
+                                <p class="">
+                                    Zapatillas
+                                </p>
+
+                            </div>
+
+                            <!-- contenedor de imagen de producto -->
+                            <div class="container-imagen">
+                                <img class="imagen" src="imagenes/Abrigos/5-abrigo-marron-claro.jpg" alt="abrigo de buzo">
+                            </div>
+
                         </div>
-    
-                        <!-- contenedor de descripcion -->
-                        <div class="container-descripcion nombre-seccion">
-    
-                            <!-- titulo -->
-                            <p class="texto1 ">
-                                Zapatillas
-                            </p>
-    
-                        </div>
-                    </div>
-                </a>
+                        
+
+                    </a>
+                    
+                </li>
                 
-            </li>
+                
+                <!-- recuadro de producto -->
+                <li class="contenedor-categoria">
+                    <a href="remeras.html">
+                        <div class="contenedor-grid-categoria">
+                            <!-- contenedor de descripcion -->
+                            <div class="nombre-categoria">
+
+                                <!-- titulo -->
+                                <p class="texto1 ">
+                                    Remeras
+                                </p>
+
+                            </div>
+                            <!-- contenedor de imagen de producto -->
+                            <div class="container-imagen">
+                                <img class="imagen" src="imagenes/Abrigos/3-abrigo-grande-amarillo.jpg" alt="abrigo de buzo">
+                            </div>
+                        
+                        </div>
+                    </a>
+                </li>
+
+                <!-- recuadro de producto -->
+                <li class="contenedor-categoria">
+                    <a href="abrigos.html">
+
+                        <div class="contenedor-grid-categoria">
+                            <!-- contenedor de descripcion -->
+                            <div class="nombre-categoria">
+
+                                <!-- titulo -->
+                                <p class="texto1 ">
+                                    Abrigos
+                                </p>
+
+                            </div>
+                            
+                            <!-- contenedor de imagen de producto -->
+                            <div class="container-imagen">
+                                <img class="imagen" src="imagenes/Abrigos/1-abgrigo-grande-hombre.jpg" alt="abrigo de buzo">
+                            </div>
+                        </div>
+                        
+
+                    </a>
+                    
+                </li>
+
+                <!-- recuadro de producto -->
+                <li class="contenedor-categoria">
+                    <a href="pantalones.html">
+
+                        <div class="contenedor-grid-categoria">
+                            <!-- contenedor de descripcion -->
+                            <div class="nombre-categoria">
+
+                                <!-- titulo -->
+                                <p class="texto1 ">
+                                    Pantalones
+                                </p>
+
+                            </div>
+                            
+                            <!-- contenedor de imagen de producto -->
+                            <div class="container-imagen">
+                                <img class="imagen" src="imagenes/Abrigos/10-agrigo-negro-grande-hombre.png" alt="abrigo de buzo">
+                            </div>
+                        </div>
+                        
+
+                    </a>
+                    
+                </li>
+
+                <!-- recuadro de producto -->
+                <li class="contenedor-categoria">
+                    <a href="accesorios.html">
+
+                        <div class="contenedor-grid-categoria">
+                            <!-- contenedor de descripcion -->
+                            <div class="nombre-categoria">
+
+                                <!-- titulo -->
+                                <p class="texto1 ">
+                                    Accesorios
+                                </p>
+
+                            </div>
+
+                            <!-- contenedor de imagen de producto -->
+                            <div class="container-imagen">
+                                <img class="imagen" src="imagenes/Abrigos/13-saco-grande-gris.jpg" alt="abrigo de buzo">
+                            </div>
+                        </div>
+                        
+
+                    </a>
+                    
+                </li>
+
+                <!-- recuadro de producto -->
+                <li class="contenedor-categoria">
+                    <a href="gorras.html">
+
+                        <div class="contenedor-grid-categoria">
+                            <!-- contenedor de descripcion -->
+                            <div class="nombre-categoria">
+
+                                <!-- titulo -->
+                                <p class="texto1 ">
+                                    Accesorios
+                                </p>
+
+                            </div>
+
+                            <!-- contenedor de imagen de producto -->
+                            <div class="container-imagen">
+                                <img class="imagen" src="imagenes/Abrigos/12-saco-grande-crema.png" alt="abrigo de buzo">
+                            </div>
+                        </div>
+                        
+
+                    </a>
+                    
+                </li>
+
+        </section>
+        <!-- Fin seccion indumentaria -->
+        
+        <!--  -->
+        <section class="conocenos " id="conocenos">
+            <section class="nombre-seccion">
+                <h2>Somos AC</h2>
+            </section>
+            <section class="container contenido-conocenos">
+                <div class="descripcion-empresa">
+                    <div class="padding-descripcion-conocenos">
+                        <p>
+                            Somos una tienda de ropa para variada con un sistema de ventas de reserva
+                            de prendas via correo electronico
+                        </p>
+                    </div>
+ 
+                </div>
+                
+                <div class="contenedor-imagen-conocenos">
+                    <img class="" src="imagenes/Abrigos/3-abrigo-grande-amarillo.jpg" alt="">
+            </section>
             
-            
-            <!-- recuadro de producto -->
-            <li class="contenedor-recuadro">
-                <a href="remeras.html">
-                    <div class="recuadro">
-                        <!-- contenedor de imagen de producto -->
-                        <div class="container-imagen">
-                            <img class="imagen" src="imagenes/remeras.png" alt="abrigo de buzo">
-                        </div>
-    
-                        <!-- contenedor de descripcion -->
-                        <div class="container-descripcion nombre-seccion">
-    
-                            <!-- titulo -->
-                            <p class="texto1 ">
-                                Remeras
-                            </p>
-    
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <!-- recuadro de producto -->
-            <li class="contenedor-recuadro">
-                <a href="abrigos.html">
-                    <div class="recuadro">
-                        <!-- contenedor de imagen de producto -->
-                        <div class="container-imagen">
-                            <img class="imagen" src="imagenes/buzo.png" alt="abrigo de buzo">
-                        </div>
-    
-                        <!-- contenedor de descripcion -->
-                        <div class="container-descripcion nombre-seccion">
-    
-                            <!-- titulo -->
-                            <p class="texto1 ">
-                                Buzos
-                            </p>
-    
-                        </div>
-                    </div>
-                </a>
-                
-            </li>
-
-            <!-- recuadro de producto -->
-            <li class="contenedor-recuadro">
-                <a href="pantalones.html">
-                    <div class="recuadro">
-                        <!-- contenedor de imagen de producto -->
-                        <div class="container-imagen">
-                            <img class="imagen" src="imagenes/pantalon.png" alt="abrigo de buzo">
-                        </div>
-    
-                        <!-- contenedor de descripcion -->
-                        <div class="container-descripcion nombre-seccion">
-    
-                            <!-- titulo -->
-                            <p class="texto1 ">
-                                Pantalones
-                            </p>
-    
-                        </div>
-                    </div>
-                </a>
-                
-            </li>
-            
-            <!-- recuadro de producto -->
-            <li class="contenedor-recuadro">
-                <a href="gorras.html">
-                    <div class="recuadro">
-                        <!-- contenedor de imagen de producto -->
-                        <div class="container-imagen">
-                            <img class="imagen" src="imagenes/gorra.png" alt="abrigo de buzo">
-                        </div>
-    
-                        <!-- contenedor de descripcion -->
-                        <div class="container-descripcion nombre-seccion">
-    
-                            <!-- titulo -->
-                            <p class="texto1 ">
-                                Gorras
-                            </p>
-    
-                        </div>
-                    </div>
-                </a>
-                
-            </li>
-
-            <!-- recuadro de producto -->
-            <li class="contenedor-recuadro">
-                <a href="accesorios.html">
-                    <div class="recuadro">
-                        <!-- contenedor de imagen de producto -->
-                        <div class="container-imagen">
-                            <img class="imagen" src="imagenes/accesorio.png" alt="abrigo de buzo">
-                        </div>
-    
-                        <!-- contenedor de descripcion -->
-                        <div class="container-descripcion nombre-seccion">
-    
-                            <!-- titulo -->
-                            <p class="texto1 ">
-                                Accesorios
-                            </p>
-    
-                        </div>
-                    </div>
-                </a>
-                
-            </li>
-
+        </section>
+        <!--  -->
     </section>
-    <!-- Fin seccion indumentaria -->
 
-    <footer>
-
-        <!-- Seccion de soporte -->
-        <section>
-            <h3 class="soporte-ayuda">Necesitas ayuda?</h3>
-
-            <p class="contenido-soporte-ayuda">               
-                En AC nos preocupamos porque nuestros clientes tengan la mejor atencion, no dudes en contactarnos si necesitas ayuda
-            </p>
-
-            <p class="contenido-soporte-ayuda">
-                <a href="contacto.html" > 
-                    <strong class="contactanos-aqui-texto">CONTACTANOS AQUI!</strong>
-                </a> 
-            </p>
-            
-            
-        </section>    
-        <!-- Fin seccion soporte -->
-        
-        <!-- Seccion info de la empresa y redes sociales -->
-        <section id="conocenos">
-            <h3 class="soporte-ayuda">Somos AC!</h3>
-            
-            <p class="contenido-soporte-ayuda">
-               Una tienda de ropa para todos los gustos, con indumentaria variada y de todo tipo                
-            </p>
-            
-            <!-- Seccion redes -->
-            <h3 class="soporte-ayuda">Unete a nuestra comunidad!</h3>
-
-            <section class="contenido-soporte-ayuda contenido-seccion-redes">
-                <section class="seccion-redes">
-                     <a href="https://www.instagram.com">
-                         <img src="imagenes/redes-sociales/instagram.png" class="redes" alt="instegram" width="100px" height="100px"> 
-                     </a>
- 
-                     <a href="https://www.facebook.com">
-                         <img src="imagenes/redes-sociales/facebook.png" class="redes" alt="facebook" width="100px" height="100px"> 
-                     </a>
- 
-                     <a href="https://www.twitter.com">
-                         <img src="imagenes/redes-sociales/twitter.png" class="redes" alt="twitter" width="100px" height="100px">
-                     </a>
-                </section>
-                 
-                 
-             </section>
-            
-        </section> 
-        <!-- Fin seccion empresa y redes sociales -->
-        
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button"
+            ><i class="fab fa-facebook-f"></i
+            ></a>
+    
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button"
+            ><i class="fab fa-twitter"></i
+            ></a>
+    
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com.ar/" role="button"
+            ><i class="fab fa-google"></i
+            ></a>
+    
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"
+            ><i class="fab fa-instagram"></i
+            ></a>
+    
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-linkedin-in"></i
+            ></a>
+    
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/nahuelaace/AC-proyecto-final" role="button"
+            ><i class="fab fa-github"></i
+            ></a>
+        </section>
+        <!-- Section: Social media -->
+    
+        <!-- Section: Form -->
+        <section class="">
+            <form action="">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+                <!--Grid column-->
+                <div class="col-auto">
+                <p class="pt-2">
+                    <strong>Suscribite a nuestro Newsletter</strong>
+                </p>
+                </div>
+                <!--Grid column-->
+    
+                <!--Grid column-->
+                <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                    <input type="email" id="form5Example2" class="form-control" />
+                    <label class="form-label" for="form5Example2">Email address</label>
+                </div>
+                </div>
+                <!--Grid column-->
+    
+                <!--Grid column-->
+                <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-outline-light mb-4">
+                    Subscribe
+                </button>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+            </form>
+        </section>
+        <!-- Section: Form -->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
     </footer>
+    <!-- Footer -->
 
+    <!-- Boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+    <!-- MDB -->
+    <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+    ></script>
 </body>
 </html>

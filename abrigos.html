@@ -26,46 +26,81 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
+     <!-- MDBoostrap -->
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+    rel="stylesheet"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
-    
     <title> - AC - Tienda de ropa de alta calidad para todos </title>
+
 </head>
 <body>
 
     <!-- encabezado y menu -->
-    <header>
-
+    <header >
+        
         <!-- Menu principal / Navegable -->
-        <nav class="navbar navbar-expand-lg navbar-dark centrado">
+        <nav class="navbar navbar-expand-lg bg-dark ">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">AC</a>
+              
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link item" href="#conocenos">Conocenos</a>
-                  </li>
-                </ul>
-              </div>
+
+                <div class="contenedor-sepadador-items container">
+
+                    <ul class="contenedor-items contenedor-items-1">
+
+                        <li class="nav-item">
+                            <a class="nav-link active item" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+
+                    </ul>
+
+
+                    <div class=" contenedor-items contenedor-items-2">
+                        <a class="navbar-brand item logo " href="index.html"><h1>AC</h1></a>
+                    </div>
+                   
+                    <ul class="contenedor-items contenedor-items-3">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link item" href="https://www.instagram.com/">Instagram</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link item" href="https://www.facebook.com/">Facebook</a>
+                        </li>
+                    </ul>
+
+                </div>
+              
             </div>
+            
         </nav>
+    
 
-
-  
     </header>
     <!-- fin encabezado y menu -->
 
     <!-- Seccion catalogo -->
     <section class="contenido-de-pagina">  
         
-        <h2 class="indumentaria">Abrigos!</h2>
+        <h2 class="nombre-seccion">Abrigos!</h2>
 
         <!-- Contenedor de card de producto y formulario -->
         <section class="container-cards">
@@ -137,10 +172,8 @@
                     </div>
                     <div class="reserva">
                         
-                        <a tabindex="0" class="btn btn-secondary" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
-                        <!-- <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Reservado!">
-                            RESERVAR
-                        </button> -->
+                        <a tabindex="0" class="btn btn-dark " role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
+            
                     </div>
 
                 </div>
@@ -216,10 +249,8 @@
                     </div>
                     <div class="reserva">
                         
-                        <a tabindex="0" class="btn btn-secondary" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
-                        <!-- <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Reservado!">
-                            RESERVAR
-                        </button> -->
+                        <a tabindex="0" class="btn btn-dark" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
+                        
                     </div>
 
                 </div>
@@ -295,10 +326,8 @@
                     </div>
                     <div class="reserva">
                         
-                        <a tabindex="0" class="btn btn-secondary" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
-                        <!-- <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Reservado!">
-                            RESERVAR
-                        </button> -->
+                        <a tabindex="0" class="btn btn-dark" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
+                        
                     </div>
 
                 </div>
@@ -374,10 +403,8 @@
                     </div>
                     <div class="reserva">
                         
-                        <a tabindex="0" class="btn btn-secondary" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
-                        <!-- <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Reservado!">
-                            RESERVAR
-                        </button> -->
+                        <a tabindex="0" class="btn btn-dark" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
+                        
                     </div>
 
                 </div>
@@ -453,10 +480,8 @@
                     </div>
                     <div class="reserva">
                         
-                        <a tabindex="0" class="btn btn-secondary" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
-                        <!-- <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Reservado!">
-                            RESERVAR
-                        </button> -->
+                        <a tabindex="0" class="btn btn-dark" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
+                        
                     </div>
 
                 </div>
@@ -532,10 +557,8 @@
                     </div>
                     <div class="reserva">
                         
-                        <a tabindex="0" class="btn btn-secondary" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
-                        <!-- <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Reservado!">
-                            RESERVAR
-                        </button> -->
+                        <a tabindex="0" class="btn btn-dark" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
+                        
                     </div>
 
                 </div>
@@ -611,10 +634,8 @@
                     </div>
                     <div class="reserva">
                         
-                        <a tabindex="0" class="btn btn-secondary" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
-                        <!-- <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Reservado!">
-                            RESERVAR
-                        </button> -->
+                        <a tabindex="0" class="btn btn-dark" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
+                        
                     </div>
 
                 </div>
@@ -658,10 +679,7 @@
                         
                         <!-- Descripcion -->
                         <p>
-                            Campera de Jean
-                            <br>
-                            no te gastes en comprarla porque es imposible que te quede 
-                            mas linda que a la modelo de la foto
+                            Campera de Jean                            
                         </p>
                         <!-- Fin decripcion -->
 
@@ -695,10 +713,8 @@
                     </div>
                     <div class="reserva">
                         
-                        <a tabindex="0" class="btn btn-secondary" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
-                        <!-- <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Reservado!">
-                            RESERVAR
-                        </button> -->
+                        <a tabindex="0" class="btn btn-dark" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
+                        
                     </div>
 
                 </div>
@@ -774,10 +790,8 @@
                     </div>
                     <div class="reserva">
                         
-                        <a tabindex="0" class="btn btn-secondary" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
-                        <!-- <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Reservado!">
-                            RESERVAR
-                        </button> -->
+                        <a tabindex="0" class="btn btn-dark" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
+                        
                     </div>
 
                 </div>
@@ -853,10 +867,8 @@
                     </div>
                     <div class="reserva">
                         
-                        <a tabindex="0" class="btn btn-secondary" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
-                        <!-- <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Reservado!">
-                            RESERVAR
-                        </button> -->
+                        <a tabindex="0" class="btn btn-dark" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
+                        
                     </div>
 
                 </div>
@@ -932,10 +944,8 @@
                     </div>
                     <div class="reserva">
                         
-                        <a tabindex="0" class="btn btn-secondary" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
-                        <!-- <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Reservado!">
-                            RESERVAR
-                        </button> -->
+                        <a tabindex="0" class="btn btn-dark" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
+                        
                     </div>
 
                 </div>
@@ -1011,10 +1021,8 @@
                     </div>
                     <div class="reserva">
                         
-                        <a tabindex="0" class="btn btn-secondary" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
-                        <!-- <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Reservado!">
-                            RESERVAR
-                        </button> -->
+                        <a tabindex="0" class="btn btn-dark" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
+                        
                     </div>
 
                 </div>
@@ -1090,10 +1098,8 @@
                     </div>
                     <div class="reserva">
                         
-                        <a tabindex="0" class="btn btn-secondary" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
-                        <!-- <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Reservado!">
-                            RESERVAR
-                        </button> -->
+                        <a tabindex="0" class="btn btn-dark" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
+                        
                     </div>
 
                 </div>
@@ -1169,10 +1175,8 @@
                     </div>
                     <div class="reserva">
                         
-                        <a tabindex="0" class="btn btn-secondary" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
-                        <!-- <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Reservado!">
-                            RESERVAR
-                        </button> -->
+                        <a tabindex="0" class="btn btn-dark" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
+                        
                     </div>
 
                 </div>
@@ -1248,10 +1252,8 @@
                     </div>
                     <div class="reserva">
                         
-                        <a tabindex="0" class="btn btn-secondary" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
-                        <!-- <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Reservado!">
-                            RESERVAR
-                        </button> -->
+                        <a tabindex="0" class="btn btn-dark" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Reservado!" data-bs-content="Ya hemos resivido tu reserva, acercate a la tienda con tu nombre y correo electronico para retirar tu pedido">RESERVAR</a>
+                        
                     </div>
 
                 </div>
@@ -1267,68 +1269,105 @@
     <!-- Fin seccion catalogo -->
 
     <!-- Footer -->
-    <footer>
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+            <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button"
+            ><i class="fab fa-facebook-f"></i
+            ></a>
 
-        <!-- Seccion de soporte -->
-        <section>
-            <h3 class="soporte-ayuda">Necesitas ayuda?</h3>
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button"
+            ><i class="fab fa-twitter"></i
+            ></a>
 
-            <p class="contenido-soporte-ayuda">               
-                En AC nos preocupamos porque nuestros clientes tengan la mejor atencion, no dudes en contactarnos si necesitas ayuda
-            </p>
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com.ar/" role="button"
+            ><i class="fab fa-google"></i
+            ></a>
 
-            <p class="contenido-soporte-ayuda">
-                <a href="contacto.html" > 
-                    <strong class="contactanos-aqui-texto">CONTACTANOS AQUI!</strong>
-                </a> 
-            </p>
-            
-            
-        </section>    
-        <!-- Fin seccion soporte -->
-        
-        <!-- Seccion info de la empresa y redes sociales -->
-        <section id="conocenos">
-            <h3 class="soporte-ayuda">Somos AC!</h3>
-            
-            <p class="contenido-soporte-ayuda">
-               Una tienda de ropa para todos los gustos, con indumentaria variada y de todo tipo                
-            </p>
-            
-            <!-- Seccion redes -->
-            <h3 class="soporte-ayuda">Unete a nuestra comunidad!</h3>
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"
+            ><i class="fab fa-instagram"></i
+            ></a>
 
-            <section class="contenido-soporte-ayuda contenido-seccion-redes">
-                <section class="seccion-redes">
-                     <a href="https://www.instagram.com">
-                         <img src="imagenes/redes-sociales/instagram.png" class="redes" alt="instegram" width="100px" height="100px"> 
-                     </a>
- 
-                     <a href="https://www.facebook.com">
-                         <img src="imagenes/redes-sociales/facebook.png" class="redes" alt="facebook" width="100px" height="100px"> 
-                     </a>
- 
-                     <a href="https://www.twitter.com">
-                         <img src="imagenes/redes-sociales/twitter.png" class="redes" alt="twitter" width="100px" height="100px">
-                     </a>
-                </section>
-                 
-                 
-             </section>
-            
-        </section> 
-        <!-- Fin seccion empresa y redes sociales -->
-        
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-linkedin-in"></i
+            ></a>
+
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/nahuelaace/AC-proyecto-final" role="button"
+            ><i class="fab fa-github"></i
+            ></a>
+        </section>
+        <!-- Section: Social media -->
+    
+        <!-- Section: Form -->
+        <section class="">
+            <form action="">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+                <!--Grid column-->
+                <div class="col-auto">
+                <p class="pt-2">
+                    <strong>Suscribite a nuestro Newsletter</strong>
+                </p>
+                </div>
+                <!--Grid column-->
+    
+                <!--Grid column-->
+                <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                    <input type="email" id="form5Example2" class="form-control" />
+                    <label class="form-label" for="form5Example2">Email address</label>
+                </div>
+                </div>
+                <!--Grid column-->
+    
+                <!--Grid column-->
+                <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-outline-light mb-4">
+                    Subscribe
+                </button>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+            </form>
+        </section>
+        <!-- Section: Form -->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright
+        <a class="text-white" href="https://ar.linkedin.com/">by <strong>Nahuel Acevedo</strong> </a>
+        </div>
+        <!-- Copyright -->
     </footer>
+    <!-- Footer -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 
-<script>
-    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
-    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {;
-    return new bootstrap.Popover(popoverTriggerEl);
-})
-</script>
+    <!-- MDB -->
+    <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+    ></script>
+
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {;
+        return new bootstrap.Popover(popoverTriggerEl);
+    })
+    </script>
 
 </body>
 </html>

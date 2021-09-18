@@ -4,7 +4,7 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    box-sizing:content-box;
+    box-sizing: border-box;;
     dl,ol,ul{
         margin-bottom: 0;
         padding-left: 0%;
@@ -15,10 +15,17 @@
     }
     h1, h2, h3, h4, h5, h6,p{
         margin-bottom: 0%;
-
     }
     a:hover{
-        color:white
+        color:white;
+    }
+    .container-fluid{
+        margin: 0%;
+        padding: 0%;
+    }
+    .nav-link, .navbar-brand{
+        padding: 0%;
+        
     }
     .btn-outline-success{
         color: white;
@@ -29,5 +36,6 @@
     }
     .card{
         border: none;
+        background-color: transparent;
     }
 }

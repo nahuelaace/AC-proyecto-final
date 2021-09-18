@@ -9,8 +9,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 400px 400px 400px;
-    background-image: url('../fondo.jpg');
-    
+
     .card{
         position: relative;
         display: flex;
@@ -22,7 +21,6 @@
             height: 350px;
             
             border-radius: 2%;
-            border: 1px solid rgb(196, 196, 196);
             box-shadow: 7px 7px 20px 0 rgb(0 0 0 / 10%),  
             -7px 7px 20px 0 rgb(0 0 0 / 10%);
             transition: all 0.7s;

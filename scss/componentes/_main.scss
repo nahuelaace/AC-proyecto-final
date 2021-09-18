@@ -4,14 +4,90 @@
 @import '../base/mixins';
 
 
-.indumentaria {
-    @include estilo-font-colores(25px,$texto,nth($color-bg, 3), nth($color-bg, 1));
-    text-align: center;
-    padding: 5px;
-    border-bottom: 1px solid nth($color-bg, 6);
+.nombre-seccion{
+    padding-top: 20px;
+    font-family: $titulo;
+    display: flex;
+    justify-content: center;
+}
+.container-productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    .contenedor-categoria{
+        display: flex;
+        justify-content: center;
+        margin: 40px auto;
+        width: 300px;
+        height: 500px;
+        .contenedor-grid-categoria{
+            display: grid;
+            grid-template-rows: 100px 400px;
+            transition: all 0.7s;
+            .nombre-categoria{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: $titulo-secundario;
+                font-size: 32px;
+                color: rgb(105, 105, 105);
+                font-weight: bold;
+            }
+            .container-imagen{
+                display: flex;
+                align-items: center;
+                height: 100%;
+                margin: auto;
+                z-index: 1000;
+                .imagen{
+                    width: 300px;
+                    height: 400px;
+                }
+            } 
+        }
+
+        .contenedor-grid-categoria:hover{
+            transform: scale(1.07);
+        }
+          
+    }
 }
 
-
-
+.conocenos{
+    height: 600px;
+    background-color: rgb(236, 202, 128);
+    .contenido-conocenos{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 500px;
+        .descripcion-empresa{
+            display: flex;
+            align-items: center;
+            
+            .padding-descripcion-conocenos{
+                display: flex;
+                align-items: center;
+                padding-left: 40px;
+                height: 150px;
+                background-color: rgb(221, 221, 221);
+                font-family: $texto;
+            }
+            
+        }
+        .contenedor-imagen-conocenos{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            img{
+                width: 300px;
+                height: 400px;
+            }
+        }
+    }
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    width: 4rem;
+    height: 4rem;
+}
 
 /*  */

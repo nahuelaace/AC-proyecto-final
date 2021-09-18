@@ -3,23 +3,65 @@
 @import '../base/listas-variables';
 @import '../base/mixins';
 @import '../base/extends';
+
 header{
     display: flex;
     justify-content: center;
     position: relative;
-    z-index: 1000;
-    background-color: nth($color-bg, 2 );
+    height: auto;
+    z-index: 2000;
+    
+    .logo{
+        font-family: $titulo;
+    }
     .navbar{
-        width: 1200px;
+        width: 100%;
         display: flex;
+        align-items: center;
         justify-content: center;
     }
     .item{
+        color: rgb(226, 226, 226);
         transition: 0.5s all;
+        
     }
     .item:hover{
+        color: rgb(221, 221, 221);
         transform: scale(1.2);
     }
+    .container-fluid{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .nav-item{
+        margin-bottom: 5px;
+        height: 20px;
+        padding: 0% 30px;
+    }
+    
+    .contenedor-sepadador-items{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+
+        .contenedor-items{
+            display: flex;
+            align-items: center;
+        }
+        .contenedor-items-1{
+            justify-content: start;
+        }
+        .contenedor-items-2{
+            justify-content: center;
+        }
+        .contenedor-items-3{
+            justify-content: end;
+        }
+
+    }
+   
 }
 
 /* Mediaqerys */

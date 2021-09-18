@@ -49,5 +49,19 @@ footer {
     .redes:hover {
         transform: rotate(360deg);
     }
+
+    .seccion-links{
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        .row-nowrap{
+            flex-wrap: nowrap;
+        }
+    }
+    
+    .justifi-content-start{
+        display: flex;
+        justify-content: start;
+    }
     
 }

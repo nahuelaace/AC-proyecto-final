@@ -511,7 +511,7 @@ header .como-reservar-prenda .desplegar-info-reserva:hover .info-como-reservar {
   align-items: center;
 }
 .container-cards .card .card-2 .descripcion form .datos-de-cliente label input, .container-cards .card .card-2 .descripcion form .datos-de-cliente input input {
-  transform: scale(0.95);
+  transform: scale(0.8);
 }
 .container-cards .card .card-2 .reserva {
   height: 45px;

@@ -503,12 +503,7 @@ header .como-reservar-prenda .desplegar-info-reserva:hover .info-como-reservar {
 .container-cards .card .card-2 .descripcion form .datos-de-cliente {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  padding-left: 5%;
-}
-.container-cards .card .card-2 .descripcion form .datos-de-cliente .ajuste-formulario-android {
-  display: flex;
-  align-items: center;
-  width: 95%;
+  grid-template-columns: 1fr;
 }
 .container-cards .card .card-2 .reserva {
   height: 45px;

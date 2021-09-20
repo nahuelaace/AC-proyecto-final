@@ -104,16 +104,8 @@
                     }
                     .datos-de-cliente{
                         display: grid;
-                        grid-template-rows: 1fr 1fr 1fr 1fr;   
-                        padding-left: 5%;
-                        .ajuste-formulario-android{
-                            display: flex;
-                            align-items: center;
-                            
-                            width: 95%;
-                           
-                        }
-                        
+                        grid-template-rows: 1fr 1fr 1fr 1fr;  
+                        grid-template-columns: 1fr;
                     }
                 }
             }

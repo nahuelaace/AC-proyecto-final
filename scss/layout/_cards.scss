@@ -103,9 +103,14 @@
                         grid-template-rows: 1fr 1fr ;
                     }
                     .datos-de-cliente{
+                        text-align: start;
                         display: grid;
                         grid-template-rows: 1fr 1fr 1fr 1fr;  
                         grid-template-columns: 1fr;
+                        label, input{
+                            display: flex;
+                            align-items: center;
+                        }
                     }
                 }
             }
@@ -199,6 +204,8 @@
         grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px;
         .card{
             transform: scale(0.8);
+            width: 90%;
+            margin-left: 5%;
         }
     }
 }

@@ -104,6 +104,8 @@
                     .datos-de-cliente{
                         display: grid;
                         grid-template-rows: 1fr 1fr 1fr 1fr;
+                        padding-left: 5%;
+                        width: 80%;
                         label{
                             display: flex;
                             align-items: center;

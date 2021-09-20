@@ -1,6 +1,4 @@
 /* caracteristicas globales */
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Montserrat:wght@300&display=swap");
 * {
   margin: 0;
@@ -504,6 +502,8 @@ header .como-reservar-prenda .desplegar-info-reserva:hover .info-como-reservar {
 .container-cards .card .card-2 .descripcion form .datos-de-cliente {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding-left: 5%;
+  width: 80%;
 }
 .container-cards .card .card-2 .descripcion form .datos-de-cliente label {
   display: flex;

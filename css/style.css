@@ -484,6 +484,7 @@ header .como-reservar-prenda .desplegar-info-reserva:hover .info-como-reservar {
 .container-cards .card .card-2 .descripcion form {
   height: 100%;
   display: grid;
+  grid-template-columns: 100%;
   grid-template-rows: 10% 30% 60%;
 }
 .container-cards .card .card-2 .descripcion form .talle {
@@ -502,10 +503,8 @@ header .como-reservar-prenda .desplegar-info-reserva:hover .info-como-reservar {
 .container-cards .card .card-2 .descripcion form .datos-de-cliente {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  padding-left: 5%;
-  width: 80%;
 }
-.container-cards .card .card-2 .descripcion form .datos-de-cliente label {
+.container-cards .card .card-2 .descripcion form .datos-de-cliente widht label {
   display: flex;
   align-items: center;
 }

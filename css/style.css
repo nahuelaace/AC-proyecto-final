@@ -668,7 +668,7 @@ header .como-reservar-prenda .desplegar-info-reserva:hover .info-como-reservar {
   .datos-de-cliente label, .datos-de-cliente input {
     display: flex;
     align-items: center;
-    transform: scale(0.9);
+    transform: scale(0.8);
   }
 }
 /* ajuste de contenedor de cards para pantallas de entre  651px y 990px*/
@@ -688,7 +688,7 @@ header .como-reservar-prenda .desplegar-info-reserva:hover .info-como-reservar {
   .datos-de-cliente label, .datos-de-cliente input {
     display: flex;
     align-items: center;
-    transform: scale(0.9);
+    transform: scale(0.8);
   }
 }
 

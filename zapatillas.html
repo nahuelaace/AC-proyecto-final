@@ -51,64 +51,79 @@
 </head>
 <body>
 
-   <!-- encabezado y menu -->
-   <header >
+    <!-- Header/navbar -->
+    <header >
         
-    <!-- Menu principal / Navegable -->
-    <nav class="navbar navbar-expand-lg bg-dark ">
-        <div class="container-fluid">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-dark ">
+            <div class="container-fluid">
 
-            <div class="contenedor-sepadador-items container">
+                <!-- Contenedor de secciones de navbar -->
+                <div class="contenedor-sepadador-items container">
+                    
+                    <!-- Items de navegacion en la pagina -->
+                    <ul class="contenedor-items contenedor-items-1">
 
-                
-                <ul class="contenedor-items contenedor-items-1">
+                        <li class="nav-item item-productos">
+                            <a class="nav-link item contenedor-item" href="index.html#productos">Productos</a>
+                        </li>
+                        <li class="nav-item item-contacto">
+                            <a class="nav-link active item" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
 
-                    <li class="nav-item item-productos">
-                        <a class="nav-link item contenedor-item" href="index.html#productos">Productos</a>
-                    </li>
-                    <li class="nav-item item-contacto">
-                        <a class="nav-link active item" aria-current="page" href="contacto.html">Contacto</a>
-                    </li>
+                    </ul>
+                    <!-- Fin items de navegacion en la pagina -->
 
-                </ul>
+                    <!-- Logo -->
+                    <div class=" contenedor-items contenedor-items-2">
+                        <a class="navbar-brand item logo " href="index.html"><h1>AC</h1></a>
+                    </div>
+                    <!--  Fin logo -->
 
+                   <!-- Items redes -->
+                    <ul class="contenedor-items contenedor-items-3">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link item" href="https://www.instagram.com/">Instagram</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link item" href="https://www.facebook.com/">Facebook</a>
+                        </li>
 
-                <div class=" contenedor-items contenedor-items-2">
-                    <a class="navbar-brand item logo " href="index.html"><h1>AC</h1></a>
+                    </ul>
+                    <!-- Fin items redes -->
+                    
                 </div>
-               
-                <ul class="contenedor-items contenedor-items-3">
-                    
-                    <li class="nav-item">
-                        <a class="nav-link item" href="https://www.instagram.com/">Instagram</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link item" href="https://www.facebook.com/">Facebook</a>
-                    </li>
+                <!-- Fin contenedor de secciones de navbar -->
 
-                    
-
-                </ul>
-                
-                
             </div>
-          
-        </div>
-        
-    </nav>
+        </nav>
+       <!-- Fin navbar -->
 
-    <section class="como-reservar-prenda">
-        <div class="desplegar-info-reserva">
-            <p class="subrayado">->> Como reservar una prenda <<-</p>
-            <div class="info-como-reservar">
-               <p>Para reservar una prenda solo debes seleccionarla, completar el formulario y luego con tu reserva podes pasar a retirar la prenda por nuestro local</p> 
+        <!-- Informacion de como reservar -->
+        <section class="como-reservar-prenda">
+
+            <!-- Seccion para hace hover -->
+            <div class="desplegar-info-reserva">
+                <p class="subrayado">->> Como reservar una prenda <<-</p>
+
+                <!-- Informacion de reserva -->
+                <div class="info-como-reservar">
+                   <p>
+                       Para reservar una prenda solo debes seleccionarla, completar el formulario y luego 
+                       con tu reserva podes pasar a retirar la prenda por nuestro local
+                    </p> 
+                </div>
+                <!-- Fin informacion de reserva -->
+            
             </div>
-        </div>
-        
-    </section>
+            <!-- Fin seccion para hacer hover -->
 
-</header>
-<!-- fin encabezado y menu -->
+        </section>
+        <!-- Fin Informacion de como reservar -->
+
+    </header>
+    <!-- Fin Header/navbar -->
 
     <!-- Seccion catalogo -->
     <section class="contenido-de-pagina">  
@@ -673,7 +688,7 @@
                     <div class="container-precio">
 
                         <!-- Precio -->
-                        <p class="precio"> <strong>∞</strong></p>
+                        <p class="precio"> <strong>$10000</strong></p>
 
                         <!-- Estado en stock -->
                         <p class="ver-mas"><strong>Sin stock</strong></p>    
@@ -1281,80 +1296,83 @@
     </section>
     <!-- Fin seccion catalogo -->
 
-    <!-- Footer -->
+    <!-- Footer de boostrap -->
     <footer class="bg-dark text-center text-white">
+
         <!-- Grid container -->
-            <div class="container p-4">
-        <!-- Section: Social media -->
-        <section class="mb-4">
-            <!-- Facebook -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button"
-            ><i class="fab fa-facebook-f"></i
-            ></a>
+        <div class="container p-4">
 
-            <!-- Twitter -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button"
-            ><i class="fab fa-twitter"></i
-            ></a>
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button"
+                ><i class="fab fa-facebook-f"></i
+                ></a>
 
-            <!-- Google -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com.ar/" role="button"
-            ><i class="fab fa-google"></i
-            ></a>
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button"
+                ><i class="fab fa-twitter"></i
+                ></a>
 
-            <!-- Instagram -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"
-            ><i class="fab fa-instagram"></i
-            ></a>
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com.ar/" role="button"
+                ><i class="fab fa-google"></i
+                ></a>
 
-            <!-- Linkedin -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-            ><i class="fab fa-linkedin-in"></i
-            ></a>
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"
+                ><i class="fab fa-instagram"></i
+                ></a>
 
-            <!-- Github -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/nahuelaace/AC-proyecto-final" role="button"
-            ><i class="fab fa-github"></i
-            ></a>
-        </section>
-        <!-- Section: Social media -->
-    
-        <!-- Section: Form -->
-        <section class="">
-            <form action="">
-            <!--Grid row-->
-            <div class="row d-flex justify-content-center">
-                <!--Grid column-->
-                <div class="col-auto">
-                <p class="pt-2">
-                    <strong>Suscribite a nuestro Newsletter</strong>
-                </p>
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-linkedin-in"></i
+                ></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/nahuelaace/AC-proyecto-final" role="button"
+                ><i class="fab fa-github"></i
+                ></a>
+            </section>
+            <!-- Section: Social media -->
+        
+            <!-- Section: Form -->
+            <section class="">
+                <form action="">
+                <!--Grid row-->
+                <div class="row d-flex justify-content-center">
+                    <!--Grid column-->
+                    <div class="col-auto">
+                    <p class="pt-2">
+                        <strong>Suscribite a nuestro Newsletter</strong>
+                    </p>
+                    </div>
+                    <!--Grid column-->
+        
+                    <!--Grid column-->
+                    <div class="col-md-5 col-12">
+                    <!-- Email input -->
+                    <div class="form-outline form-white mb-4">
+                        <input type="email" id="form5Example2" class="form-control" />
+                        <label class="form-label" for="form5Example2">Email address</label>
+                    </div>
+                    </div>
+                    <!--Grid column-->
+        
+                    <!--Grid column-->
+                    <div class="col-auto">
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-outline-light mb-4">
+                        Subscribe
+                    </button>
+                    </div>
+                    <!--Grid column-->
                 </div>
-                <!--Grid column-->
-    
-                <!--Grid column-->
-                <div class="col-md-5 col-12">
-                <!-- Email input -->
-                <div class="form-outline form-white mb-4">
-                    <input type="email" id="form5Example2" class="form-control" />
-                    <label class="form-label" for="form5Example2">Email address</label>
-                </div>
-                </div>
-                <!--Grid column-->
-    
-                <!--Grid column-->
-                <div class="col-auto">
-                <!-- Submit button -->
-                <button type="submit" class="btn btn-outline-light mb-4">
-                    Subscribe
-                </button>
-                </div>
-                <!--Grid column-->
-            </div>
-            <!--Grid row-->
-            </form>
-        </section>
-        <!-- Section: Form -->
+                <!--Grid row-->
+                </form>
+            </section>
+            <!-- Section: Form -->
+
         </div>
         <!-- Grid container -->
     
@@ -1366,21 +1384,26 @@
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
+
+    <!-- Scripts Boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <!-- Fin Scripts Boostrap -->
 
-    <!-- MDB -->
+    <!-- Scripts MDB -->
     <script
         type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
     ></script>
+    <!-- Fin scripts MDB -->
 
+    <!-- Scripts para botones de reserva boostrap -->
     <script>
         var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
         var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {;
         return new bootstrap.Popover(popoverTriggerEl);
     })
     </script>
-
+    <!-- Fin Scripts para botones de reserva boostrap -->
 </body>
 </html>

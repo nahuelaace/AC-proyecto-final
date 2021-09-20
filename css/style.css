@@ -36,7 +36,6 @@
 /* Fonts importadas de google */
 /* header */
 /* listas - variables */
-/* centrado de contenido */
 header {
   display: flex;
   flex-direction: column;
@@ -410,8 +409,6 @@ header .como-reservar-prenda .desplegar-info-reserva:hover .info-como-reservar {
 
 /* Fin pagina soporte */
 /*  */
-/* Footer soporte */
-/* listas - variables */
 /* Modelo de recuadro */
 /* listas - variables */
 .container-cards {
@@ -460,7 +457,7 @@ header .como-reservar-prenda .desplegar-info-reserva:hover .info-como-reservar {
 }
 .container-cards .card .recuadro-cards .ver-mas {
   font-family: "Montserrat", sans-serif;
-  background-color: #ecca80;
+  background-color: #d4ab51;
   border-radius: 4px;
   color: white;
   text-align: center;
@@ -585,6 +582,5 @@ header .como-reservar-prenda .desplegar-info-reserva:hover .info-como-reservar {
   }
 }
 /* listas - variables */
-/* centrado de contenido */
 
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,5 @@
 /* Pagina de soporte */
-
-@import '../base/listas-variables';
-
+/* Estilos de contenido de pagina soporte */
 .body-soporte {
     font-family: $texto;
     font-weight: bold;
@@ -10,6 +8,8 @@
     strong{
         font-size: 18px;
     }
+
+    /* Ajuste de mapa ubicacion del local*/
     .mapa {
         margin-top: 30px;
         width:100%;

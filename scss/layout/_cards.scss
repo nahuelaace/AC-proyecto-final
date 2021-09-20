@@ -110,8 +110,12 @@
                         label, input{
                             display: flex;
                             align-items: center;
-                            transform: scale(0.7);
+                            input{
+                                transform: scale(0.95);
+                            }
                         }
+        
+                        
                     }
                 }
             }
@@ -204,7 +208,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px;
         .card{
-            transform: scale(0.9);
+            transform: scale(0.8);
             
         }
     }

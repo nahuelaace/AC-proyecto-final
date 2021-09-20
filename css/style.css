@@ -509,7 +509,9 @@ header .como-reservar-prenda .desplegar-info-reserva:hover .info-como-reservar {
 .container-cards .card .card-2 .descripcion form .datos-de-cliente label, .container-cards .card .card-2 .descripcion form .datos-de-cliente input {
   display: flex;
   align-items: center;
-  transform: scale(0.7);
+}
+.container-cards .card .card-2 .descripcion form .datos-de-cliente label input, .container-cards .card .card-2 .descripcion form .datos-de-cliente input input {
+  transform: scale(0.95);
 }
 .container-cards .card .card-2 .reserva {
   height: 45px;
@@ -580,7 +582,7 @@ header .como-reservar-prenda .desplegar-info-reserva:hover .info-como-reservar {
     grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px;
   }
   .container-cards .card {
-    transform: scale(0.9);
+    transform: scale(0.8);
   }
 }
 /* listas - variables */

@@ -506,11 +506,6 @@ header .como-reservar-prenda .desplegar-info-reserva:hover .info-como-reservar {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr;
 }
-.container-cards .card .card-2 .descripcion form .datos-de-cliente label, .container-cards .card .card-2 .descripcion form .datos-de-cliente input {
-  display: flex;
-  align-items: center;
-  transform: scale(0.9);
-}
 .container-cards .card .card-2 .reserva {
   height: 45px;
   display: flex;
@@ -572,6 +567,12 @@ header .como-reservar-prenda .desplegar-info-reserva:hover .info-como-reservar {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 400px 400px 400px 400px 400px 400px 400px 400px;
   }
+
+  .datos-de-cliente label, .datos-de-cliente input {
+    display: flex;
+    align-items: center;
+    transform: scale(0.9);
+  }
 }
 @media only screen and (max-width: 650px) {
   .container-cards {
@@ -581,6 +582,12 @@ header .como-reservar-prenda .desplegar-info-reserva:hover .info-como-reservar {
   }
   .container-cards .card {
     transform: scale(0.8);
+  }
+
+  .datos-de-cliente label, .datos-de-cliente input {
+    display: flex;
+    align-items: center;
+    transform: scale(0.9);
   }
 }
 /* listas - variables */

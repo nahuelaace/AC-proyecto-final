@@ -107,12 +107,7 @@
                         display: grid;
                         grid-template-rows: 1fr 1fr 1fr 1fr;  
                         grid-template-columns: 1fr;
-                        label, input{
-                            display: flex;
-                            align-items: center;
-                            transform: scale(0.9);
-                            
-                        }
+                        
         
                         
                     }
@@ -199,6 +194,14 @@
         grid-template-rows: 400px 400px 400px 400px 400px 400px 400px 400px;
         
     }
+    .datos-de-cliente{
+        label, input{
+        display: flex;
+        align-items: center;
+        transform: scale(0.9);
+        
+        }
+    }
 }
 
 @media only screen and (max-width:650px){
@@ -210,5 +213,13 @@
             transform: scale(0.8);
             
         }
+    }
+    .datos-de-cliente{
+        label, input{
+        display: flex;
+        align-items: center;
+        transform: scale(0.9);
+        
+    }
     }
 }

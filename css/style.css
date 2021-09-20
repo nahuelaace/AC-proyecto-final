@@ -29,13 +29,6 @@
 * .nav-link, * .navbar-brand {
   padding: 0%;
 }
-* .btn-outline-success {
-  color: white;
-  border-color: white;
-}
-* .bg-dark {
-  background-color: transparent;
-}
 * .card {
   border: none;
 }
@@ -109,18 +102,28 @@ header .contenedor-sepadador-items .contenedor-items-3 {
 /*  */
 /* + de 751px */
 @media only screen and (min-width: 751px) {
-  /* Logo y menu */
   header {
     position: sticky;
     top: 0px;
   }
 }
-@media only screen and (max-width: 991px) {
-  /* Logo y menu */
-  .lista-items {
+@media only screen and (max-width: 767px) {
+  header .contenedor-sepadador-items {
     display: flex;
-    justify-content: start;
-    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  header .contenedor-sepadador-items .contenedor-items-1 .item-contacto {
+    padding: 0%;
+  }
+  header .contenedor-sepadador-items .contenedor-items-1 .item-productos {
+    display: none;
+  }
+  header .contenedor-sepadador-items .contenedor-items-2 {
+    justify-content: center;
+  }
+  header .contenedor-sepadador-items .contenedor-items-3 {
+    display: none;
   }
 }
 /* Fin header */
@@ -198,11 +201,13 @@ header .contenedor-sepadador-items .contenedor-items-3 {
   font-family: "Spartan", sans-serif;
 }
 .conocenos .contenido-conocenos .contenedor-imagen-conocenos {
+  display: block;
   height: 100%;
   display: flex;
   align-items: center;
 }
 .conocenos .contenido-conocenos .contenedor-imagen-conocenos img {
+  display: block;
   width: 300px;
   height: 400px;
 }
@@ -213,6 +218,37 @@ header .contenedor-sepadador-items .contenedor-items-3 {
 }
 
 /*  */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container-productos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container-productos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .conocenos {
+    height: 680px;
+  }
+  .conocenos .padding-bottom-seccion {
+    padding-bottom: 20px;
+  }
+  .conocenos .contenido-conocenos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+  }
+  .conocenos .contenido-conocenos .descripcion-empresa .padding-descripcion-conocenos {
+    padding-right: 40px;
+    text-align: center;
+  }
+  .conocenos .contenido-conocenos .contenedor-imagen-conocenos {
+    justify-content: center;
+  }
+}
 /* Contenido de pagina */
 /* listas - variables */
 /* caracteristicas de seccion*/
@@ -286,11 +322,13 @@ header .contenedor-sepadador-items .contenedor-items-3 {
   font-family: "Spartan", sans-serif;
 }
 .conocenos .contenido-conocenos .contenedor-imagen-conocenos {
+  display: block;
   height: 100%;
   display: flex;
   align-items: center;
 }
 .conocenos .contenido-conocenos .contenedor-imagen-conocenos img {
+  display: block;
   width: 300px;
   height: 400px;
 }
@@ -301,6 +339,37 @@ header .contenedor-sepadador-items .contenedor-items-3 {
 }
 
 /*  */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container-productos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container-productos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .conocenos {
+    height: 680px;
+  }
+  .conocenos .padding-bottom-seccion {
+    padding-bottom: 20px;
+  }
+  .conocenos .contenido-conocenos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+  }
+  .conocenos .contenido-conocenos .descripcion-empresa .padding-descripcion-conocenos {
+    padding-right: 40px;
+    text-align: center;
+  }
+  .conocenos .contenido-conocenos .contenedor-imagen-conocenos {
+    justify-content: center;
+  }
+}
 /* Pagina de soporte */
 /* listas - variables */
 /* caracteristicas de seccion*/
@@ -422,7 +491,7 @@ footer .justifi-content-start {
   text-align: center;
 }
 .container-cards .card .recuadro-cards .ver-mas {
-  background-color: #cccccc;
+  background-color: #ecca80;
   border-radius: 4px;
   color: white;
   text-align: center;
@@ -520,6 +589,23 @@ footer .justifi-content-start {
   }
 }
 
+@media only screen and (min-width: 991px) and (max-width: 1540px) {
+  .container-cards {
+    width: 720px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 400px 400px 400px 400px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .container-cards {
+    width: 240px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px;
+  }
+  .container-cards .card {
+    transform: scale(0.8);
+  }
+}
 /* listas - variables */
 /* centrado de contenido */
 footer .contenido-seccion-redes {

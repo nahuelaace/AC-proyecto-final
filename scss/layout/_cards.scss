@@ -54,7 +54,7 @@
                 text-align: center;
             }
             .ver-mas{
-                background-color: rgb(204, 204, 204);
+                background-color: rgb(236, 202, 128);
                 border-radius: 4px;
                 color: white;
                 text-align: center;
@@ -174,3 +174,21 @@
 }
 
 
+@media only screen and  (min-width:991px) and (max-width:1540px){
+    .container-cards {
+        width: 720px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 400px 400px 400px 400px 400px;
+    }
+}
+
+@media only screen and (max-width:990px){
+    .container-cards {
+        width: 240px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px;
+        .card{
+            transform: scale(0.8);
+        }
+    }
+}

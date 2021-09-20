@@ -1,8 +1,0 @@
-/* caracteristicas de seccion*/
-@mixin estilo-font-colores($size,$family-font,$bg-color,$color-font) {
-    font-size: $size;
-    background-color: $bg-color;
-    font-family: $family-font;
-    color: $color-font;
- 
-}

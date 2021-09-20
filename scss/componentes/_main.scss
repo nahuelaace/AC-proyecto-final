@@ -1,14 +1,18 @@
 /* Contenido de pagina */
 
 @import '../base/listas-variables';
-@import '../base/mixins';
 
 
 .nombre-seccion{
-    padding-top: 20px;
+    padding-top: 40px;
     font-family: $titulo;
     display: flex;
     justify-content: center;
+    text-align: center;
+    h2{
+        font-weight: bold;
+    }
+    
 }
 .container-productos{
     display: grid;
@@ -31,7 +35,7 @@
                 font-family: $titulo-secundario;
                 font-size: 32px;
                 color: rgb(105, 105, 105);
-                font-weight: bold;
+                
             }
             .container-imagen{
                 display: flex;
@@ -71,6 +75,7 @@
                 height: 150px;
                 background-color: rgb(221, 221, 221);
                 font-family: $texto;
+                font-weight: bold;
             }
             
         }

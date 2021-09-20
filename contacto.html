@@ -45,42 +45,64 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    
+
     <title> - AC - Tienda de ropa de alta calidad para todos </title>
+
 </head>
 <body>
 
     <!-- encabezado y menu -->
-    <header>
-
+    <header >
+        
         <!-- Menu principal / Navegable -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg bg-dark ">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">AC</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link item" href="#conocenos">Conocenos</a>
-                  </li>
-                </ul>
-              </div>
+
+                <div class="contenedor-sepadador-items container">
+
+                    
+                    <ul class="contenedor-items contenedor-items-1">
+
+                        <li class="nav-item item-productos">
+                            <a class="nav-link item contenedor-item" href="index.html#productos">Productos</a>
+                        </li>
+                        <li class="nav-item item-contacto">
+                            <a class="nav-link active item" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+
+                    </ul>
+
+
+                    <div class=" contenedor-items contenedor-items-2">
+                        <a class="navbar-brand item logo " href="index.html"><h1>AC</h1></a>
+                    </div>
+                   
+                    <ul class="contenedor-items contenedor-items-3">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link item" href="https://www.instagram.com/">Instagram</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link item" href="https://www.facebook.com/">Facebook</a>
+                        </li>
+
+                        
+
+                    </ul>
+                    
+                    
+                </div>
+              
             </div>
+            
         </nav>
 
-
-  
     </header>
     <!-- fin encabezado y menu -->
 
     <!-- Seccion de soporte -->
-    <section >
-        <h2 class="indumentaria">Si necesitas ayuda contactanos!</h2>
+    <section class="container">
+        <h2 class="nombre-seccion">Si necesitas ayuda contactanos!</h2>
 
         <section class="body-soporte">
             <p class="dato-de-contacto">
@@ -116,41 +138,91 @@
     <!-- Fin seccion de soporte -->
 
 
-    <footer>
-        
-        <!-- Seccion info de la empresa y redes sociales -->
-        <section id="conocenos">
-            <h3 class="soporte-ayuda">Somos AC!</h3>
-            
-            <p class="contenido-soporte-ayuda">
-                Una tienda de ropa para todos los gustos, con indumentaria variada y de todo tipo                
-            </p>
-            
-            <!-- Seccion redes -->
-            <h3 class="soporte-ayuda">Unete a nuestra comunidad!</h3>
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+            <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button"
+            ><i class="fab fa-facebook-f"></i
+            ></a>
 
-            <section class="contenido-soporte-ayuda contenido-seccion-redes">
-                <section class="seccion-redes">
-                        <a href="https://www.instagram.com">
-                            <img src="imagenes/redes-sociales/instagram.png" class="redes" alt="instegram" width="100px" height="100px"> 
-                        </a>
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button"
+            ><i class="fab fa-twitter"></i
+            ></a>
+
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com.ar/" role="button"
+            ><i class="fab fa-google"></i
+            ></a>
+
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"
+            ><i class="fab fa-instagram"></i
+            ></a>
+
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-linkedin-in"></i
+            ></a>
+
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/nahuelaace/AC-proyecto-final" role="button"
+            ><i class="fab fa-github"></i
+            ></a>
+        </section>
+        <!-- Section: Social media -->
     
-                        <a href="https://www.facebook.com">
-                            <img src="imagenes/redes-sociales/facebook.png" class="redes" alt="facebook" width="100px" height="100px"> 
-                        </a>
+        <!-- Section: Form -->
+        <section class="">
+            <form action="">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+                <!--Grid column-->
+                <div class="col-auto">
+                <p class="pt-2">
+                    <strong>Suscribite a nuestro Newsletter</strong>
+                </p>
+                </div>
+                <!--Grid column-->
     
-                        <a href="https://www.twitter.com">
-                            <img src="imagenes/redes-sociales/twitter.png" class="redes" alt="twitter" width="100px" height="100px">
-                        </a>
-                </section>
-                    
-                    
-                </section>
-            
-        </section> 
-        <!-- Fin seccion empresa y redes sociales -->
-        
+                <!--Grid column-->
+                <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                    <input type="email" id="form5Example2" class="form-control" />
+                    <label class="form-label" for="form5Example2">Email address</label>
+                </div>
+                </div>
+                <!--Grid column-->
+    
+                <!--Grid column-->
+                <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-outline-light mb-4">
+                    Subscribe
+                </button>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+            </form>
+        </section>
+        <!-- Section: Form -->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright
+        <a class="text-white" href="https://ar.linkedin.com/">by <strong>Nahuel Acevedo</strong> </a>
+        </div>
+        <!-- Copyright -->
     </footer>
+    <!-- Footer -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 

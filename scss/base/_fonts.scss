@@ -1,11 +1,13 @@
 /* Fonts importadas de google */
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap');
 
-$titulo: 'Righteous', cursive;
 
-$titulo-secundario: 'Antic Slab', serif;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Montserrat:wght@300&display=swap');
 
-$texto: 'Spartan', sans-serif;
+$titulo: 'Cinzel Decorative', cursive;
+
+$titulo-secundario: 'Cinzel Decorative', cursive;
+
+$texto: 'Montserrat', sans-serif;

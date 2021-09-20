@@ -1,7 +1,7 @@
 /* caracteristicas globales */
-@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Righteous&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Montserrat:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -36,23 +36,14 @@
 /* Fonts importadas de google */
 /* header */
 /* listas - variables */
-/* caracteristicas de seccion*/
 /* centrado de contenido */
-footer .contenido-seccion-redes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   position: relative;
   height: auto;
   z-index: 2000;
-}
-header .logo {
-  font-family: "Righteous", cursive;
 }
 header .navbar {
   width: 100%;
@@ -63,6 +54,11 @@ header .navbar {
 header .item {
   color: #e2e2e2;
   transition: 0.5s all;
+  font-family: "Cinzel Decorative", cursive;
+}
+header h1 {
+  font-family: "Cinzel Decorative", cursive;
+  font-weight: 700;
 }
 header .item:hover {
   color: #dddddd;
@@ -97,6 +93,25 @@ header .contenedor-sepadador-items .contenedor-items-2 {
 header .contenedor-sepadador-items .contenedor-items-3 {
   justify-content: end;
 }
+header .como-reservar-prenda {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #353535;
+}
+header .como-reservar-prenda .desplegar-info-reserva {
+  text-align: center;
+}
+header .como-reservar-prenda .desplegar-info-reserva .info-como-reservar {
+  display: none;
+}
+header .como-reservar-prenda .desplegar-info-reserva:hover .subrayado {
+  text-decoration: underline;
+}
+header .como-reservar-prenda .desplegar-info-reserva:hover .info-como-reservar {
+  text-align: center;
+  display: block;
+}
 
 /* Mediaqerys */
 /*  */
@@ -130,12 +145,15 @@ header .contenedor-sepadador-items .contenedor-items-3 {
 /*  */
 /* Contenido de pagina */
 /* listas - variables */
-/* caracteristicas de seccion*/
 .nombre-seccion {
-  padding-top: 20px;
-  font-family: "Righteous", cursive;
+  padding-top: 40px;
+  font-family: "Cinzel Decorative", cursive;
   display: flex;
   justify-content: center;
+  text-align: center;
+}
+.nombre-seccion h2 {
+  font-weight: bold;
 }
 
 .container-productos {
@@ -159,10 +177,9 @@ header .contenedor-sepadador-items .contenedor-items-3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Antic Slab", serif;
+  font-family: "Cinzel Decorative", cursive;
   font-size: 32px;
   color: dimgray;
-  font-weight: bold;
 }
 .container-productos .contenedor-categoria .contenedor-grid-categoria .container-imagen {
   display: flex;
@@ -198,7 +215,8 @@ header .contenedor-sepadador-items .contenedor-items-3 {
   padding-left: 40px;
   height: 150px;
   background-color: #dddddd;
-  font-family: "Spartan", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 .conocenos .contenido-conocenos .contenedor-imagen-conocenos {
   display: block;
@@ -251,12 +269,15 @@ header .contenedor-sepadador-items .contenedor-items-3 {
 }
 /* Contenido de pagina */
 /* listas - variables */
-/* caracteristicas de seccion*/
 .nombre-seccion {
-  padding-top: 20px;
-  font-family: "Righteous", cursive;
+  padding-top: 40px;
+  font-family: "Cinzel Decorative", cursive;
   display: flex;
   justify-content: center;
+  text-align: center;
+}
+.nombre-seccion h2 {
+  font-weight: bold;
 }
 
 .container-productos {
@@ -280,10 +301,9 @@ header .contenedor-sepadador-items .contenedor-items-3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Antic Slab", serif;
+  font-family: "Cinzel Decorative", cursive;
   font-size: 32px;
   color: dimgray;
-  font-weight: bold;
 }
 .container-productos .contenedor-categoria .contenedor-grid-categoria .container-imagen {
   display: flex;
@@ -319,7 +339,8 @@ header .contenedor-sepadador-items .contenedor-items-3 {
   padding-left: 40px;
   height: 150px;
   background-color: #dddddd;
-  font-family: "Spartan", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 .conocenos .contenido-conocenos .contenedor-imagen-conocenos {
   display: block;
@@ -372,17 +393,18 @@ header .contenedor-sepadador-items .contenedor-items-3 {
 }
 /* Pagina de soporte */
 /* listas - variables */
-/* caracteristicas de seccion*/
 .body-soporte {
-  font-size: 20px;
-  background-color: #dfe7fa;
-  font-family: "Spartan", sans-serif;
-  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   padding: 30px 10%;
   text-align: center;
 }
+.body-soporte strong {
+  font-size: 18px;
+}
 .body-soporte .mapa {
-  width: 60%;
+  margin-top: 30px;
+  width: 100%;
   box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.15), -10px 10px 30px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -390,63 +412,8 @@ header .contenedor-sepadador-items .contenedor-items-3 {
 /*  */
 /* Footer soporte */
 /* listas - variables */
-/* caracteristicas de seccion*/
-footer .soporte-ayuda {
-  font-size: 20px;
-  background-color: black;
-  font-family: "Spartan", sans-serif;
-  color: white;
-  text-align: center;
-  padding: 3px;
-}
-footer .contenido-soporte-ayuda {
-  font-size: 15px;
-  background-color: #a0b7f1;
-  font-family: "Spartan", sans-serif;
-  color: black;
-  text-align: center;
-  padding: 10px;
-  font-weight: bold;
-}
-footer .contactanos-aqui-texto {
-  text-decoration: underline;
-  color: black;
-}
-footer .contactanos-aqui-texto:hover {
-  color: white;
-}
-footer .seccion-redes {
-  width: 900px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-footer .redes {
-  width: 50px;
-  height: 50px;
-  border-radius: 100px;
-  padding: 5px;
-  transition: all 2s;
-}
-footer .redes:hover {
-  transform: rotate(360deg);
-}
-footer .seccion-links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-}
-footer .seccion-links .row-nowrap {
-  flex-wrap: nowrap;
-}
-footer .justifi-content-start {
-  display: flex;
-  justify-content: start;
-}
-
 /* Modelo de recuadro */
 /* listas - variables */
-/* caracteristicas de seccion*/
 .container-cards {
   width: 1200px;
   margin: 0px auto;
@@ -488,9 +455,11 @@ footer .justifi-content-start {
   grid-template-columns: 1fr 1fr;
 }
 .container-cards .card .recuadro-cards .precio {
+  font-family: "Cinzel Decorative", cursive;
   text-align: center;
 }
 .container-cards .card .recuadro-cards .ver-mas {
+  font-family: "Montserrat", sans-serif;
   background-color: #ecca80;
   border-radius: 4px;
   color: white;
@@ -509,6 +478,8 @@ footer .justifi-content-start {
   background-color: #e4e4e4;
 }
 .container-cards .card .card-2 .descripcion {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   text-align: center;
   display: grid;
   grid-template-rows: 2fr 8fr;
@@ -600,10 +571,7 @@ footer .justifi-content-start {
   .container-cards {
     width: 480px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
-  }
-  .container-cards .card {
-    transform: scale(0.8);
+    grid-template-rows: 400px 400px 400px 400px 400px 400px 400px 400px;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -618,12 +586,5 @@ footer .justifi-content-start {
 }
 /* listas - variables */
 /* centrado de contenido */
-footer .contenido-seccion-redes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* caracteristicas de seccion*/
 
 /*# sourceMappingURL=style.css.map */

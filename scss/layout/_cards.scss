@@ -1,7 +1,7 @@
 /* Modelo de recuadro */
 
 @import '../base/listas-variables';
-@import '../base/mixins';
+
 
 .container-cards{
     width: 1200px;
@@ -50,10 +50,11 @@
                 
             }
             .precio{
-                
+                font-family: $titulo-secundario;
                 text-align: center;
             }
             .ver-mas{
+                font-family: $texto;
                 background-color: rgb(236, 202, 128);
                 border-radius: 4px;
                 color: white;
@@ -76,6 +77,8 @@
             background-color: rgb(228, 228, 228);
             .descripcion{
 
+                font-family: $texto;
+                font-weight: bold;
                 text-align: center;
                 display: grid;
                 grid-template-rows: 2fr 8fr;
@@ -186,10 +189,8 @@
     .container-cards {
         width: 480px;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
-        .card{
-            transform: scale(0.8);
-        }
+        grid-template-rows: 400px 400px 400px 400px 400px 400px 400px 400px;
+        
     }
 }
 

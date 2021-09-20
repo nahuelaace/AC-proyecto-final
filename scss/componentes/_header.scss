@@ -1,20 +1,16 @@
 /* header */
 
 @import '../base/listas-variables';
-@import '../base/mixins';
 @import '../base/extends';
 
 header{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     position: relative;
     height: auto;
     z-index: 2000;
     
-    .logo{
-        font-family: $titulo;
-        
-    }
     .navbar{
         width: 100%;
         display: flex;
@@ -24,7 +20,12 @@ header{
     .item{
         color: rgb(226, 226, 226);
         transition: 0.5s all;
+        font-family: $titulo;
         
+    }
+    h1{
+        font-family: $titulo;
+       font-weight: 700;
     }
     .item:hover{
         color: rgb(221, 221, 221);
@@ -61,7 +62,30 @@ header{
             justify-content: end;
         }
     }
-   
+   .como-reservar-prenda{
+       display: flex;
+       justify-content: center;
+       color: white;
+       background-color: #353535;
+        .desplegar-info-reserva {
+            text-align: center;
+                
+            .info-como-reservar{
+                display: none;
+            }
+        }
+        .desplegar-info-reserva:hover {
+            .subrayado{
+                text-decoration: underline;
+            }
+            
+            .info-como-reservar{
+                text-align: center;
+                display: block;
+                
+            }
+        }
+   }
 }
 
 /* Mediaqerys */

@@ -486,7 +486,6 @@ header .como-reservar-prenda .desplegar-info-reserva:hover .info-como-reservar {
   display: grid;
   grid-template-columns: 90%;
   grid-template-rows: 10% 30% 60%;
-  padding: 5%;
 }
 .container-cards .card .card-2 .descripcion form .talle {
   display: flex;
@@ -580,9 +579,7 @@ header .como-reservar-prenda .desplegar-info-reserva:hover .info-como-reservar {
     grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px;
   }
   .container-cards .card {
-    transform: scale(0.8);
-    width: 90%;
-    margin-left: 5%;
+    transform: scale(0.9);
   }
 }
 /* listas - variables */

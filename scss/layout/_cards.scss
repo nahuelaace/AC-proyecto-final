@@ -89,7 +89,6 @@
                     display: grid;
                     grid-template-columns: 90%;
                     grid-template-rows: 10% 30% 60%;
-                    padding: 5%;
                     .talle{
                         display: flex;
                         justify-content: center;
@@ -204,9 +203,8 @@
         grid-template-columns: 1fr;
         grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px;
         .card{
-            transform: scale(0.8);
-            width: 90%;
-            margin-left: 5%;
+            transform: scale(0.9);
+            
         }
     }
 }

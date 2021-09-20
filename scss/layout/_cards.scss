@@ -105,11 +105,15 @@
                     .datos-de-cliente{
                         display: grid;
                         grid-template-rows: 1fr 1fr 1fr 1fr;   
-                        widht                                           
-                        label{
+                        padding-left: 5%;
+                        .ajuste-formulario-android{
                             display: flex;
                             align-items: center;
+                            
+                            width: 95%;
+                           
                         }
+                        
                     }
                 }
             }

@@ -182,7 +182,18 @@
     }
 }
 
-@media only screen and (max-width:990px){
+@media only screen and  (min-width:651px) and (max-width:990px){
+    .container-cards {
+        width: 480px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
+        .card{
+            transform: scale(0.8);
+        }
+    }
+}
+
+@media only screen and (max-width:650px){
     .container-cards {
         width: 240px;
         grid-template-columns: 1fr;
